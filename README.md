@@ -1,8 +1,7 @@
-# 4-BIT-ALU
+# 4-Bit Discrete Transistor ALU
 
-# 4-Bit Discrete Transistor CPU
 
-![CPU Hero Shot](../images/Computer_running_closeup.jpg)
+![CPU Hero Shot](images/Computer_running_closeup.jpg)
 
 While my computer engineering degree provides a strong theoretical foundation, my real learning happens hands-on. I built a functional 4-bit CPU entirely from scratch using 404 discrete NPN transistors, and I have designed custom IO boards using KiCad. I actively seek out and enjoy tackling complex, ground-up hardware challenges.
 
