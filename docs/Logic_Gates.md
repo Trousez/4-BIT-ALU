@@ -1,4 +1,5 @@
 ## Buffer and Inverter
 
-images/buffer-and-inverter-built.jpeg 
+
+![Buffer and Inverter](images/buffer-and-inverter-built.jpeg )
 
