@@ -82,6 +82,8 @@ Chaining two half-adders to handle a Carry-In bit.
 
 ![ripple_carry_adder](../images/final-layout.png)
 
+
+*   ➡️ **[The Two's Complement Generator](docs/Twos_Complement_Generator.md):**
 ---
 
 
