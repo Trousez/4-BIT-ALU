@@ -53,6 +53,11 @@
 ### References
 - Breadboard stability: https://forum.digikey.com/t/breadboard-circuit-stability/36653  
 - Ground bounce and logic hazards: https://www.analog.com/en/resources/analog-dialogue/studentzone/studentzone-march-2017.html
+---
+
+*   ➡️ **[ALU Tri-State Buffers](docs/ALU_Tri_State_Buffers.md):**
+
+
 
 
 
