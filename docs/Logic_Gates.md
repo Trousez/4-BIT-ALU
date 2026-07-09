@@ -52,6 +52,20 @@
 | 1   | 0   | 0      |
 | 1   | 1   | 1      |
 
+![AND1_GATE](../images/AND_1.jpeg)
+![AND2_GATE](../images/AND_2.jpeg)
+
+---
+### XOR GATE
+_Description: Crucial for the Adder circuit. Built using 6 transistors._
+
+|  A  |  B  | Output |
+| :-: | :-: | :----: |
+|  0  |  0  |   0    |
+|  0  |  1  |   1    |
+|  1  |  0  |   1    |
+|  1  |  1  |   0    |
+
 
 
 
