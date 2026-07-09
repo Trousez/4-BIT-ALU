@@ -10,4 +10,5 @@
 
 - **Logic 1:** The gate connects the wire directly to **5V**. (Strong push).
 - **Logic 0:** The gate connects the wire directly to **Ground**. (Strong pull).
-- 
+![LTSpice-tri-state](../images/Ltspice-tri-state.png)
+
