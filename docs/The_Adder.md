@@ -23,7 +23,7 @@ Chaining two half-adders to handle a Carry-In bit.
 - **Transistor Count:** [e.g., 21 transistors]
     
 - **Testing:** Verified that $1 + 1 + 1 = 11_2$ (Sum 1, Carry 1).
-- 
+
 | **Input A** | **Input B** | **Carry In (Cin​)** | **Sum (S)** | **Carry Out (Cout​)** |
 | ----------- | ----------- | ------------------- | ----------- | --------------------- |
 | 0           | 0           | 0                   | **0**       | **0**                 |
@@ -35,6 +35,7 @@ Chaining two half-adders to handle a Carry-In bit.
 | 1           | 1           | 0                   | **0**       | **1**                 |
 | 1           | 1           | 1                   | **1**       | **1**                 |
 
+![Half_adder](../images/Full_Adders 1.png)
 
 - The first circuit is a Full adder made of 2 half-adders and an or-gate
 	- The second circuit is a Full-Adder made only from Nand gates. This one is more compact to build on a breadboard (As each nand gate is just 2 transistors next to each other.)
