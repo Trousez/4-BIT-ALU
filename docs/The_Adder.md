@@ -71,8 +71,15 @@ Chaining two half-adders to handle a Carry-In bit.
 > 
 > Solution: Although it still worked correctely when turned upside down. I made sure emiiter was connected to ground as usually one side has more electron when building the transitors to allow the current to smoothly move from one direction to the other. Swapping it gives it another current gain, although very small.
 
+![nand_adder](../images/nand-adder.jpeg)
+- Depicted is two full Adders made only of Nand gates. Each Fulle adder requires only 18 transistors
 
-![full_adder](../images/full-adder-built.jpe)
+---
+## The 4-Bit Ripple Carry Adder
+
+
+
+
 
 
 
