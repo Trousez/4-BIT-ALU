@@ -66,9 +66,14 @@ _Description: Crucial for the Adder circuit. Built using 6 transistors._
 |  1  |  0  |   1    |
 |  1  |  1  |   0    |
 
+![XOR_gate](../images/XOR.jpeg)
+
 - With this Gate swwitches were not included, rather resistors were used to act as the input switches(ones simply removes thh resistors to "turn off" the switch) I did not include switches for this one. Pulling out the 2 resistors furhest to the left acts as the switch)
 
-![Types_of_logic_gates](../images/AND_2.png)
+![Types_of_logic_gates](../images/logic-gates.png)
+
+---
+
 
 
 
