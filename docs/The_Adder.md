@@ -43,4 +43,37 @@ Chaining two half-adders to handle a Carry-In bit.
 - Requires 21 transistors.
 ![full_adder](../images/full-adder-built.jpeg)
 
+	Full Adder Colours
+> 
+> - **Red:** First half-Adder logic gate
+>     
+> - **Black:** Connections to ground 
+> - **Blue:** The second half-adder and the OR gate
+>    
+> - **Green:** Connects each logic gate to each other
+
+
+> [!example]- Log: 2nd Adder Crisis (3 Dec)
+> 
+> Issue: Carry-out LED only sometimes lit up
+> 
+> Solution: The B input resistor did not make proper connection with ground and depending on if you touch board it will make contact
+
+> [!example]- Log: NAND Adder Crisis (9 Dec)
+> 
+> Issue: Carry-out LED only sometimes lit up
+> 
+> Solution: The B input resistor did not make proper connection with ground and depending on if you touch board it will make contact
+
+> [!example]- Log: Transistors turned upside down (7 Dec)
+> 
+>  Issue: Transistors were turned upside down for last nand full adder
+> 
+> Solution: Although it still worked correctely when turned upside down. I made sure emiiter was connected to ground as usually one side has more electron when building the transitors to allow the current to smoothly move from one direction to the other. Swapping it gives it another current gain, although very small.
+
+
+![full_adder](../images/full-adder-built.jpe)
+
+
+
   
