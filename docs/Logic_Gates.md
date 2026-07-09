@@ -11,5 +11,6 @@
 - **The Buffer's Job:** It acts as a **Power Amplifier**. It gently "tastes" the weak bus voltage (High Impedance) and uses its own direct connection to the battery to blast a strong, high-current copy of that signal into the ALU.
 
 ### Buffer 2
+![Buffer 2](../images/buffer-2.png)
 
 
