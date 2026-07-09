@@ -35,9 +35,12 @@ Chaining two half-adders to handle a Carry-In bit.
 | 1           | 1           | 0                   | **0**       | **1**                 |
 | 1           | 1           | 1                   | **1**       | **1**                 |
 
-![Half_adder](../images/Full_Adders 1.png)
+![Half_adder](../images/Full_Adders_1.png)
 
 - The first circuit is a Full adder made of 2 half-adders and an or-gate
 	- The second circuit is a Full-Adder made only from Nand gates. This one is more compact to build on a breadboard (As each nand gate is just 2 transistors next to each other.)
 - *0.6-0.7V* was send if inputs was 1 for the second half-adders And gate.
 - Requires 21 transistors.
+![full_adder](../images/full-adder-built.jpeg)
+
+  
