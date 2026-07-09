@@ -40,5 +40,17 @@
 | 1   | 0   | 1      |
 | 1   | 1   | 0      |
 
-![NAND_GATE](../images/OR_2.jpeg)
+![NAND_GATE](../images/NAND.jpeg)
+
+---
+### NAND GATE 
+
+| A   | B   | Output |
+| --- | --- | ------ |
+| 0   | 0   | 0      |
+| 0   | 1   | 0      |
+| 1   | 0   | 0      |
+| 1   | 1   | 1      |
+
+
 
