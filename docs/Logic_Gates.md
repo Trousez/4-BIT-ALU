@@ -43,7 +43,7 @@
 ![NAND_GATE](../images/NAND.jpeg)
 
 ---
-### NAND GATE 
+### OR GATE 
 
 | A   | B   | Output |
 | --- | --- | ------ |
