@@ -19,6 +19,11 @@
 - Stress testing the ALU with the calulation 0 - 1 = 15 shows that the ALU circuit draws roughly 100mA.
 - With the bus and Tri state buffer it is 130 mA.
 ---
+
+ Log: Subtract Signal Weakened (9 Dec)
+>
+> **Issue:** When enabling the XOR subtract signal the signal seems to get weakend. The output is wrong, unless I add more wires to connect the ground on the Subtract module. also when enabling power it seems all the light flicker for a split second.
+
 ### Cause 1: Ground Loop Resistance (Ground Bounce)
 - Enabling subtraction turns on **4 XOR gates + Carry-In logic** at once.
 - This causes a sudden current surge flowing to ground.
