@@ -80,7 +80,7 @@ Chaining two half-adders to handle a Carry-In bit.
 - The carry out of the first adder is connected to the seconds adder carry in, and so for (hence the name ripple carry).
 - According to the diagram there will be input buffers for The A inputs of the adders
 
-- 
+![ripple_carry_adder](../images/ripple-carry-adder.jpeg)
 
 
 
