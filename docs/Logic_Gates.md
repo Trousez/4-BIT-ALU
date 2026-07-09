@@ -53,7 +53,7 @@
 | 1   | 1   | 1      |
 
 ![AND1_GATE](../images/AND_1.jpeg)
-![AND2_GATE](../images/AND_2.jpeg)
+![AND2_GATE](../images/AND_2.png)
 
 ---
 ### XOR GATE
@@ -65,6 +65,10 @@ _Description: Crucial for the Adder circuit. Built using 6 transistors._
 |  0  |  1  |   1    |
 |  1  |  0  |   1    |
 |  1  |  1  |   0    |
+
+- With this Gate swwitches were not included, rather resistors were used to act as the input switches(ones simply removes thh resistors to "turn off" the switch) I did not include switches for this one. Pulling out the 2 resistors furhest to the left acts as the switch)
+
+![Types_of_logic_gates](../images/AND_2.png)
 
 
 
