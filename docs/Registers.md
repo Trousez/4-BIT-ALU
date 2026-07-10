@@ -52,5 +52,8 @@ You do not connect the Clock directly to the Latch. You use a "Gatekeeper" circu
 >
 > **Issue:**  resistor was loose, so a new resistor was placed and this fixed the issue---
 
- ![output-register](../images/output-register-2.png)
+ ![output-register](../images/output-register.png)
+ ---
+ ## Accumalator Register
+  ![output-register](../images/output-register.png)
   
