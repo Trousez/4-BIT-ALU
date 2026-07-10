@@ -43,4 +43,4 @@ You do not connect the Clock directly to the Latch. You use a "Gatekeeper" circu
 - **Input B:** `Load Enable` (The specific command wire, e.g., "Load Reg B").
 - **Output:** Goes to the **Enable/G** pins of all 4 bits in the register.
 
-  ![gated-d-latch](../images/gated-d-latch.jpeg)
+  ![Registers](../images/Register-2.png)
