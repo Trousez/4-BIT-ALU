@@ -1,3 +1,3 @@
 ## Clock
-![Clock](../images/clock-schematic.png)
-![Clock](../images/clock.jpeg)
+            ![Clock](../images/clock-schematic.png)
+            ![Clock](../images/clock.jpeg)
