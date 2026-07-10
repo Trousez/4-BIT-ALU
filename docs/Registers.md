@@ -44,3 +44,7 @@ You do not connect the Clock directly to the Latch. You use a "Gatekeeper" circu
 - **Output:** Goes to the **Enable/G** pins of all 4 bits in the register.
 
   ![Registers](../images/Register-2.png)
+  ---
+  ### Output Register
+  
+  ![gated-d-latch](../images/gated-d-latch.jpeg)
