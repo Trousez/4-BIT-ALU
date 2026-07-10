@@ -12,6 +12,7 @@ uth Table: Falling Edge Accumulator (End-of-Cycle)
 |**High (1)**|**Change**|**1**|**Follows Input**|**No Change**|**"Thinking Time"** (ALU calculates, Master listens, Output is stable).|
 |**Falling (**$\downarrow$**)**|**Stable**|**1**|**Locks**|**Updates to Input**|**"Latching Time"** (The update happens here, at the end).|
 |**Low (0)**|X|X|**Locked**|**Stable**|**Safe State** (Waiting for next cycle).|
+
 The decision to use **Falling Edge** triggering for the Accumulator is a specific engineering choice designed to solve the problem of **"ALU Ripple Delay."**
 
 Here is the breakdown of why this strategy is smarter for a discrete breadboard computer.
