@@ -47,4 +47,5 @@ You do not connect the Clock directly to the Latch. You use a "Gatekeeper" circu
   ---
   ### Output Register
   
-  ![gated-d-latch](../images/gated-d-latch.jpeg)
+  ![output-register](../images/output-register-2.png)
+  
