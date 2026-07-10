@@ -56,4 +56,8 @@ You do not connect the Clock directly to the Latch. You use a "Gatekeeper" circu
  ---
  ## Accumalator Register
   ![Accumulator](../images/accumulator.jpeg)
+
+  *   ➡️ **[Clock](docs/Clock.md):**
+---
+
   
