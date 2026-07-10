@@ -46,3 +46,8 @@ By using the **Falling Edge** logic shown in your Truth Table:
 
 He uses Falling Edge because it automatically creates a **"Safety Buffer"** of time. It forces the computer to wait until the very end of the heartbeat—when everything is calm and stable—before committing the answer to memory.
 
+ > [!example]- Bit 4 gave same output as clock (Des 15)
+>
+> **Issue:**  I use jumper wire for ground dind make nice connection---
+---
+
