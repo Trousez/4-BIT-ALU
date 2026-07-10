@@ -44,6 +44,9 @@ This Buffer translates the Adder's "Voltage" into the Bus's "Grounding Language.
 - the bus of the last two bits melted,probably because of loose conenction from jumper cables, problem looks solved if i use the solid core wiring.
 
 ![LTSpice-tri-state](../images/tri-state.png)
+
+ ➡️ **[Registers](docs/Registers.md):** 
+ 
 ---
 
 
