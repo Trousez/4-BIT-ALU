@@ -1,2 +1,3 @@
 ## Clock
-![Clock](../images/buffer-and-inverter-built.jpeg)
+![Clock](../images/clock-schematic.png)
+![Clock](../images/clock.jpeg)
