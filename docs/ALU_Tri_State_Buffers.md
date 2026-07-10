@@ -43,5 +43,7 @@ This Buffer translates the Adder's "Voltage" into the Bus's "Grounding Language.
 - I used the multimeter and confirmed there is continuity between the two bits, now we just need to find the short by isolation and process of elimination
 - the bus of the last two bits melted,probably because of loose conenction from jumper cables, problem looks solved if i use the solid core wiring.
 
+![LTSpice-tri-state](../images/tri-state.png)
 ---
+
 
