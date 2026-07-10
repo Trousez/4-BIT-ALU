@@ -48,4 +48,9 @@ You do not connect the Clock directly to the Latch. You use a "Gatekeeper" circu
   ### Output Register
   
   ![output-register](../images/output-register-2.png)
+   > [!example]- Bit 4 always stayed on (Des 15)
+>
+> **Issue:**  resistor was loose, so a new resistor was placed and this fixed the issue---
+
+ ![output-register](../images/output-register-2.png)
   
