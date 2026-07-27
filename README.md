@@ -3,12 +3,12 @@
 
 ![CPU Hero Shot](images/Computer_running_closeup.jpg)
 
-While my computer engineering degree provides a strong theoretical foundation, my real learning happens hands-on. I built a functional 4-bit CPU entirely from scratch using 404 discrete NPN transistors, and I have designed custom IO boards using KiCad. I actively seek out and enjoy tackling complex, ground-up hardware challenges.
+This logbook documents my journey building a functional 4-bit AlU entirely from scratch using 404 discrete NPN transistors—completely free of integrated circuits for logic computation—alongside custom I/O boards designed in KiCad. Heavily inspired by the detailed schematics and instructional videos of the [Global Science Network](https://www.youtube.com/@GlobalScienceNetwork), this document serves as a raw, ground-up record of my notes, design decisions, and debugging logs. It is a working reference of practical engineering challenges, kept intentionally unpolished to capture the authentic, iterative process of bringing complex hardware to life.
 
 ## The Hardware Reality
 Building logic gates from raw physical components introduced electrical engineering challenges that do not exist in software simulations:
 *   **The Build:** Constructed using 404 discrete transistors and over 30 meters of wiring on standard breadboards. No ICs were allowed for logic computation
-*   **Power & Thermal Management:** At peak operation, the computer drew roughly 10 Amps. Distributing this load required multiple power connections to prevent the breadboards from melting
+*   **Power & Thermal Management:** At peak operation, the computer drew immense Amps. Distributing this load required multiple power connections to prevent the breadboards from melting
 *   **Physical Debugging:** Required navigating microscopic faults, loose jumper wires, ground loops, and inductive kickback
 
 ## Architecture & Deep Dives
