@@ -76,7 +76,7 @@ _Description: Crucial for the Adder circuit. Built using 6 transistors._
 
 The next section details the Adder building process and assembly
 
-➡️ **[The Adder](docs/The_Adder.md):** 
+➡️ [The Adder](docs/The_Adder.md)
 
 ---
 
