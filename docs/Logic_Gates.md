@@ -42,6 +42,7 @@
 
 ![NAND_GATE](../images/NAND.jpeg)
 
+- A NAND gate can be used to create any other type of logic gate, combinde wit hthe fact that it only takes 2 transistors to built, most of the computer ( and most modern computer) consists entirely of NAND gate.
 ---
 ### AND GATE 
 
