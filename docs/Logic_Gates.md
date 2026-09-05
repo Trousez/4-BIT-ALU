@@ -4,7 +4,9 @@
 ![Buffer and Inverter](../images/buffer-and-inverter-built.jpeg)
 ![Input Buffer](../images/input-buffer-diagram.png)
 
-- Buffer reoutputs a clean, strong singal. This is used when signal start to get weak or is heavily loaded.
+- Buffer re-outputs a clean, strong signal. This is used when signal start to get weak or is heavily loaded. This can be mathimatically represented as follows:
+
+$$A = A$$
 
 - **The Problem:** The data bus is "weak." It relies on pull-up resistors to hold the voltage at 5V. If you connect the bus directly to a complex circuit like the ALU, the ALU draws so much current that it sucks the voltage down (e.g., to 2.5V).
     
