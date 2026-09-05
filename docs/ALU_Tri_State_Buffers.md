@@ -45,7 +45,7 @@ This Buffer translates the Adder's "Voltage" into the Bus's "Grounding Language.
 
 ![LTSpice-tri-state](../images/tri-state.png)
 
- ➡️ **[Registers](docs/Registers.md):** 
+ ➡️ **[Registers](../docs/Registers.md):** 
  
 ---
 
