@@ -13,6 +13,8 @@ One also gets Tri-state buffers (which will be looked at in a later section), th
 ### Buffer 2
    ![Buffer 2](../images/buffer-2.png)
 
+Buffers can be created by connecting two inverters in series.
+
 ---
 
 ### OR GATE
