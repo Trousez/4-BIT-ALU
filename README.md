@@ -14,7 +14,7 @@ Building logic gates from raw physical components introduced electrical engineer
 
 ## Architecture & Deep Dives
 
-Click the links below to explore som of the documentation, schematics, and debugging logs for each specific module of the CPU:
+Click the links below to explore some of the documentation, schematics, and debugging logs for each specific module of the ALU:
 
 ### Arithmetic Logic Unit (ALU)
 *   ➡️ **[Logic Gates](docs/Logic_Gates.md):** The fundamental building blocks (AND, NAND, XOR, OR, Buffers) constructed entirely from discrete transistors
