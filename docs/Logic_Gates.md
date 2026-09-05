@@ -59,11 +59,14 @@ $$A+B$$
 | 1   | 0   | 1      |
 | 1   | 1   | 0      |
 - A NAND Gate is an inverted AND gate. It is mathematically represent as:
+
 $$(A \cdot B)'$$
+
+
 
 ![NAND_GATE](../images/NAND.jpeg)
 
-- A NAND gate can be used to create any other type of logic gate, combinde wit hthe fact that it only takes 2 transistors to built, most of the computer ( and most modern computer) consists entirely of NAND gate.
+- A NAND gate can be used to create any other type of logic gate, combinded with the fact that it only takes 2 transistors to built, most of the computer ( and most modern computer) consists entirely of NAND gate.
 
 ---
 ### XOR GATE
