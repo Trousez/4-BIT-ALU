@@ -26,6 +26,10 @@ Buffers can be created by connecting two inverters in series.
 | 1   | 0   | 1      |
 | 1   | 1   | 1      |
 
+An OR Gate can be mathematically represented as follows:
+$$A+B$$
+
+
 ![OR 1](../images/OR_1.jpeg)
 ![OR 2](../images/OR_2.jpeg)
 
