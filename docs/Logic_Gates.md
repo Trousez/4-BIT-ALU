@@ -69,7 +69,7 @@ $$(A \cdot B)'$$
 
 De Morgan's Laws provide the mathematical bridge that explains how a NAND gate converts into other operations (like OR and NOR):
 
-$$\overline{A \cdot B} = \overline{A} + \overline{B}$$
+$$\overline{A\cdotB} = \overline{A} + \overline{B}$$
 
 $$\overline{A + B} = \overline{A} \cdot \overline{B}$$
 
