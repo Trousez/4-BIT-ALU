@@ -68,8 +68,12 @@ $$(A \cdot B)'$$
 ![NAND_GATE](../images/NAND.jpeg)
 
 De Morgan's Laws provide the mathematical bridge that explains how a NAND gate converts into other operations (like OR and NOR):
+
 $$\overline{A \cdot B} = \overline{A} + \overline{B}$$
+
 $$\overline{A + B} = \overline{A} \cdot \overline{B}$$
+
+Using this property it is possibly to synthesis any gate
 In hardware synthesis, the first theorem transforms inverted-AND logic directly into negative-OR logic:NOT Gate: Tie the inputs together: $\overline{A \cdot A} = \overline{A}$.AND Gate: Invert a NAND output using a second NAND configured as an inverter: $\overline{\overline{A \cdot B}} = A \cdot B$.OR Gate (via De Morgan’s): Invert inputs $A$ and $B$ before feeding them into a NAND gate:$$\overline{\overline{A} \cdot \overline{B}} = \overline{\overline{A}} + \overline{\overline{B}} = A + B$$NOR Gate: Invert the output of the NAND-constructed OR gate.What Else to Include in an ALU Build LogTo make your documentation thorough and practical, add these hardware realities:XOR Gate Synthesis (Core of the ALU Adder):The arithmetic core of an ALU (the full adder) relies heavily on XOR logic for sum bits ($A \oplus B$). Building an XOR gate from NANDs takes exactly 4 NAND gates:$$A \oplus B = \overline{\overline{A \cdot \overline{A \cdot B}} \cdot \overline{B \cdot \overline{A \cdot B}}}$$
 
 ---
