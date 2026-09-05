@@ -8,6 +8,7 @@
 
 $$A = A$$
 
+One also gets Tri-state buffers (which will be looked at in a later section), that is used to prevent circuits from shorting when interconnected i.e. connected on a bus.
 
 ### Buffer 2
    ![Buffer 2](../images/buffer-2.png)
