@@ -4,7 +4,9 @@
 <p align="center">
   <img src="../images/logic-gates.png" alt="Types_of_logic_gates" width="600">
 </p>
+
 ---
+
 ### Buffer and Inverter
 
 ![Buffer and Inverter](../images/buffer-and-inverter-built.jpeg)
