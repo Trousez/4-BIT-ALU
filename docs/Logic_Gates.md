@@ -60,6 +60,10 @@ $$A+B$$
 | 1   | 0   | 0      |
 | 1   | 1   | 1      |
 
+Outputs a logic high only when all inputs are high, implemented here using series-connected transistors to gate the output line.
+
+$$\text{Output} = A \cdot B$$
+
 <p align="center">
   <img src="../images/AND_1.jpeg" alt="Discrete AND Gate Breadboard" width="48%">
   <img src="../images/AND_2.png" alt="Discrete AND Gate Schematic" width="48%">
