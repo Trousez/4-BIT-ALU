@@ -1,8 +1,12 @@
 ## ALU TRI-STATE BUFFERS
 
+In this ALU active-low, open-collector inverting tri-state buffers were used to connect each module to the bus.
+- *Active Low control:* Buffer enables when control pin is driven to 0V `ON` and disables when pulled to 5V `OFF`
+- *Inverting Data action*: When enabled an 
+
 | Enable Pin   | Data Input | Output Voltage | Logic State               |
 | ------------ | ---------- | -------------- | ------------------------- |
-| **5V** (OFF) | Any        | **5V**         | **High-Z** (Disconnected) |
+| **5V** (OFF) | Any        | **5V** (From pull-up resistors)        | **High-Z** (Disconnected) |
 | **0V** (ON)  | 0V         | **5V**         | **Logic 1** (Disconnected) |
 | **0V** (ON)  | 5V         | **16.9 mV**     | **Logic 0** (Grounded)     |
 
