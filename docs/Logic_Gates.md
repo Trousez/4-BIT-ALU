@@ -104,7 +104,7 @@ _Description: Crucial for the Adder circuit. Built using 6 transistors._
 - In the above image switches were not included, rather resistors were used to act as the input switches (Pulling out the 2 resistors furhest to the left acts as the switch)
 
 ![Final_Shematic](../images/diagram.jpg)
-Depicted above is the circuit schematic by Cody Wabiszewski. The build focusses on the right part of the schematic (the ALU).
+Depicted above is the circuit schematic by Cody Wabiszewski. The build documented in this Workbook focusses on the right part of the schematic (the ALU).
 
 
 The next section details the Adder building process and assembly.
