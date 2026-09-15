@@ -1,3 +1,7 @@
+
+### Symbols for Logic Gates
+![Types_of_logic_gates](../images/logic-gates.png)
+
 ## Buffer and Inverter
 
 
@@ -89,8 +93,6 @@ _Description: Crucial for the Adder circuit. Built using 6 transistors._
 ![XOR_gate](../images/XOR.jpeg)
 
 - In the above image switches were not included, rather resistors were used to act as the input switches (Pulling out the 2 resistors furhest to the left acts as the switch)
-
-![Types_of_logic_gates](../images/logic-gates.png)
 
 ![Final_Shematic](../images/diagram.jpg)
 
