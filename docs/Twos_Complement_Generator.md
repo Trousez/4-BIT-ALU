@@ -20,7 +20,7 @@
       ![ALU](../images/ALU_1.png)
       ![ALU](../images/ALU.png)
 
-- Stress testing the ALU with the calulation 0 - 1 = 15 shows that the ALU circuit draws roughly 100mA.
+- Stress testing the ALU with the calculation 0 - 1 = 15 shows that the ALU circuit draws roughly 100mA.
 - With the Bus and Tri state buffer it is 130 mA.
 ---
 
