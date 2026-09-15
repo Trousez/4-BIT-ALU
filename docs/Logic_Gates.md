@@ -40,7 +40,7 @@ Buffers can be created by connecting two inverters in series.
 
 An OR Gate can be mathematically represented as follows:
 
-$$A+B$$
+$$\text{Output} = A+B$$
 
 
 <p align="center">
@@ -112,7 +112,9 @@ _Description: Crucial for the Adder circuit. Built using 6 transistors._
   <img src="../images/XOR.jpeg" alt="Discrete 6-Transistor XOR Gate" width="650">
 </p>
 
-- In the above image switches were not included, rather resistors were used to act as the input switches (Pulling out the 2 resistors furhest to the left acts as the switch)
+$$\text{Output} = A \oplus B = A'B + AB'$$
+
+* **Test Configuration:** Pulling the two leftmost pull-down/bias resistors acts as the active input toggle in place of mechanical switches.
 
 ![Final_Shematic](../images/diagram.jpg)
 Depicted above is the circuit schematic by Cody Wabiszewski. The build documented in this Workbook focusses on the right part of the schematic (the ALU).
