@@ -14,6 +14,7 @@ Combining an XOR and an AND gate to add two bits.
 |  1  |  0  |    1    |     0     |
 |  1  |  1  |    0    |     1     |
 
+A Half Adder adds two single binary bits together, the `Carry` indicates the values have overflown (This 'Carry' can be fed into another Half Adder to make a Full Adder)
 ![Half_adder](../images/half-adder.jpeg)
 ---
 ## The Full Adder (1-Bit)
