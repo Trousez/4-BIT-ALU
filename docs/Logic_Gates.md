@@ -43,8 +43,10 @@ An OR Gate can be mathematically represented as follows:
 $$A+B$$
 
 
-![OR 1](../images/OR_1.jpeg)
-![OR 2](../images/OR_2.jpeg)
+<p align="center">
+  <img src="../images/OR_1.jpeg" alt="OR Gate Implementation 1" width="48%">
+  <img src="../images/OR_2.jpeg" alt="OR Gate Implementation 2" width="48%">
+</p>
 
 - Notice that there are two OR gates shown. Number 1 looks simpler (uses less transistors) but OR gate number 2 is much more useful when using it in tangent with other logic gates (when other logic gates are connected to it)
 - Notice in OR 2 the LED's cathode is directly connected in ground, while in OR 1 the cathode is connected to the collector of the transistor, this characteristic is show with all the other gates since with OR gate 2, one can easiliy connect it to the input of another logic gate.
@@ -58,8 +60,10 @@ $$A+B$$
 | 1   | 0   | 0      |
 | 1   | 1   | 1      |
 
-![AND1_GATE](../images/AND_1.jpeg)
-![AND2_GATE](../images/AND_2.png)
+<p align="center">
+  <img src="../images/AND_1.jpeg" alt="Discrete AND Gate Breadboard" width="48%">
+  <img src="../images/AND_2.png" alt="Discrete AND Gate Schematic" width="48%">
+</p>
 
 ---
 ### NAND GATE
@@ -77,7 +81,9 @@ $$(A \cdot B)'$$
 - A NAND gate can be used to create any other type of logic gate, combined with the fact that it only takes 2 transistors to built, most of the computer ( and most modern computer) consists entirely of NAND gate.
 
 
-![NAND_GATE](../images/NAND.jpeg)
+<p align="center">
+  <img src="../images/NAND.jpeg" alt="Discrete NAND Gate Implementation" width="650">
+</p>
 
 De Morgan's Laws provide the mathematical bridge that explains how a NAND gate converts into other operations (like OR and NOR):
 
@@ -98,7 +104,9 @@ _Description: Crucial for the Adder circuit. Built using 6 transistors._
 |  1  |  0  |   1    |
 |  1  |  1  |   0    |
 
-![XOR_gate](../images/XOR.jpeg)
+<p align="center">
+  <img src="../images/XOR.jpeg" alt="Discrete 6-Transistor XOR Gate" width="650">
+</p>
 
 - In the above image switches were not included, rather resistors were used to act as the input switches (Pulling out the 2 resistors furhest to the left acts as the switch)
 
