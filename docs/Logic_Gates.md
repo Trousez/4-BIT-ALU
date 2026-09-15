@@ -23,7 +23,7 @@ $$A = A$$
 ### Buffer 2
    
 <p align="center">
-  <img src="../images/buffer-2(1).png" alt="Buffer 2" width="700">
+  <img src="../images/buffer-2(1).png" alt="Cascaded Inverter Buffer Schematic" width="650">
 </p>
 Buffers can be created by connecting two inverters in series.
 
