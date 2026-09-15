@@ -37,6 +37,8 @@ Chaining two half-adders to handle a Carry-In bit.
 | 1           | 1           | 0                   | **0**       | **1**                 |
 | 1           | 1           | 1                   | **1**       | **1**                 |
 
+Verification of the logic were done using LOGISM.
+
 ![Half_adder](../images/Full_Adders_1.png)
 
 - The first circuit is a Full adder made of 2 half-adders and an or-gate
