@@ -75,7 +75,7 @@ Verification of the logic were done using LOGISM.
 ---
 ## The 4-Bit Ripple Carry Adder
 ![ripple_carry_adder](../images/ripple-carry-adder.jpeg)
-- The carry out of the first adder is connected to the seconds adder carry in, and so for (hence the name ripple carry).
+- The carry out of the first adder is connected to the seconds adder carry in, and so forth (hence the name Ripple Carry).
 - According to the diagram there will be input buffers for The A inputs of the adders
 
 ![ripple_carry_adder](../images/final-layout.png)
