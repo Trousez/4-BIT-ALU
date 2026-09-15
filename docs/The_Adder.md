@@ -47,13 +47,11 @@ Verification of the logic were done using LOGISM.
 
 ![full_adder](../images/full-adder-built.jpeg)
 
-> #### Full Adder Colours (Colour coded wiring)**
+> ### Full Adder Colours (Colour coded wiring)
 > 
 > - **Red:** First half-Adder logic gate
->     
 > - **Black:** Connections to ground 
-> - **Blue:** The second half-adder and the OR gate
->    
+> - **Blue:** The second half-adder and the OR gate  
 > - **Green:** Connects each logic gate to each other
 
 
