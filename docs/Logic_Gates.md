@@ -17,8 +17,10 @@ $$A = A$$
 - One also gets Tri-state buffers (which will be looked at in a later section), that is used to prevent circuits from shorting when interconnected i.e. connected on a bus.
 
 ### Buffer 2
-   ![Buffer 2](../images/buffer-2(1).png)
-
+   
+<p align="center">
+  <img src="../images/buffer-2(1).png" alt="Buffer 2" width="700">
+</p>
 Buffers can be created by connecting two inverters in series.
 
 ---
