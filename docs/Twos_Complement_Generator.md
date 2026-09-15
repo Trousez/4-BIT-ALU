@@ -5,7 +5,7 @@
 
     - **Invert:** The **XOR gates** act as programmable inverters. When the `SUBTRACT` line is On, they flip the B-input bits.
         
-    - **Add One:** The same `SUBTRACT` line connects to the **Carry-In** ($C_{in}$) of the first Adder. This adds the necessary $+1$ to the calculation.
+    - **Add One:** The same `SUBTRACT` line connects directly to the **Carry-In** ($C_{in}$) of the first Adder. This automatically adds the necessary $+1$ to complete the two's complement calculation.
  
      ![two-complement](../images/Subtract_1.png)
 
