@@ -21,7 +21,7 @@
       ![ALU](../images/ALU.png)
 
 - Stress testing the ALU with the calulation 0 - 1 = 15 shows that the ALU circuit draws roughly 100mA.
-- With the bus and Tri state buffer it is 130 mA.
+- With the Bus and Tri state buffer it is 130 mA.
 ---
 
  Log: Subtract Signal Weakened (9 Dec)
