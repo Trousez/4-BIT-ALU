@@ -92,7 +92,7 @@ _Description: Crucial for the Adder circuit. Built using 6 transistors._
 
 ![Types_of_logic_gates](../images/logic-gates.png)
 
-![Final_Shematic](../images/)
+![Final_Shematic](../images/diagram.jpg)
 
 
 
