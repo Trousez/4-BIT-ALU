@@ -43,10 +43,11 @@ the output is in a stable state/ displaying correct value to be captured.
 
 ### Research & References
 
+- Due to the Fourier analysis, square waves/clock pulses carry odd harmonics that have very large frequencies, even though the circuit's clock runs at <5Hz. This essentially makes it a high-frequency circuit.
+- Distributed/ parasitic capacitance and resistance acts as a low pass filter, rounding the square waves.
+- Long wires can cause voltage spikes and even ground bounce, where the local ground shifts relative to true ground and trigger erratic logic states.
 - Breadboard stability: https://forum.digikey.com/t/breadboard-circuit-stability/36653
-- Due to the Fourier analysis, square waves/clock pulses carry odd harmonics that have a very larger frequency, even though the circuit's clock runs at >5Hz. This essentially makes it a high-frequency circuit
-- Distributed/ parasitic capacitance and resistance acts as a low pass filter, rounding the square waves
-- Long wires can cause voltage spikes and even ground bounce, where the local ground shifts relative to true ground and trigger erratic logic states
+  
 - Ground bounce and logic hazards: https://www.analog.com/en/resources/analog-dialogue/studentzone/studentzone-march-2017.html
 ---
 
