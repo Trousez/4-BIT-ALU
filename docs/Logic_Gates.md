@@ -62,7 +62,7 @@ $$A+B$$
 
 $$(A \cdot B)'$$
 
-- A NAND gate can be used to create any other type of logic gate, combinded with the fact that it only takes 2 transistors to built, most of the computer ( and most modern computer) consists entirely of NAND gate.
+- A NAND gate can be used to create any other type of logic gate, combined with the fact that it only takes 2 transistors to built, most of the computer ( and most modern computer) consists entirely of NAND gate.
 
 
 ![NAND_GATE](../images/NAND.jpeg)
