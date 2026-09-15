@@ -22,7 +22,7 @@ A Half Adder adds two single binary bits together, the `Carry` indicates the val
 
 Chaining two half-adders to handle a Carry-In bit.
 
-- **Transistor Count:** [e.g., 21 transistors]
+- **Transistor Count:** 18 transistor + 3 for a Output buffer
     
 - **Testing:** Verified that $1 + 1 + 1 = 11_2$ (Sum 1, Carry 1).
 
