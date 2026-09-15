@@ -26,8 +26,17 @@
 
 >### Error Log: Subtract Signal Weakened (9 Dec)
 >
-> **Issue:** When enabling the XOR subtract signal the signal seems to get weakend. The output is wrong, unless I add more wires to connect the ground on the Subtract module. also when enabling power it seems all the light flicker for a split second.
+> **Issue:** When enabling the XOR subtract signal the signal seems to get weakend. The output is wrong, unless I add more wires to connect the ground on the Subtract module.
 >
+> **Cause:** - Ground Bounce: Enabling `Subtract` "turns on/uses" 4 XOR gates and the carry in logic. This can potentially cause a sudden current surge flowing to ground. Breadboard grounds have a noticeable resistance due to unsoldered spring contacts, during the surge, the local ground can rise, breaking the logic threshold, which can explain the wrong output. Daisy chaining my breadboards (which I initially did) worsens this effect.
+>**Solution:** - Avoid Daisy chaining breadboards, do Star Grounding rather. I also added 
+
+>### Error Log: Lights flicker on startup (9 Dec)
+>
+> **Issue:** When enabling power it seems all the light flicker for a split second.
+>
+> **Solution/Cause:**
+
 
 ### Cause 1: Ground Loop Resistance (Ground Bounce)
 - Enabling subtraction turns on **4 XOR gates + Carry-In logic** at once.
