@@ -10,7 +10,10 @@
 ### Buffer and Inverter
 
 ![Buffer and Inverter](../images/buffer-and-inverter-built.jpeg)
-![Input Buffer](../images/input-buffer-diagram.png)
+
+<p align="center">
+  <img src=../images/input-buffer-diagram.png" alt="input-buffer" width="400">
+</p>
 
 - Buffer re-outputs a clean, strong signal. This is used when signals start to get weak or is heavily loaded. Wires (especially jumper cables) induce parasitic capacitance that rounds the square waves. Buffers restore this since it uses its own $V_{CC}$ and ground rails to source or sink current. This can be mathematically represented as follows:
 
