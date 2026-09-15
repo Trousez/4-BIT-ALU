@@ -1,6 +1,6 @@
 ## Two's Complement Generator
 
-- *The Concept: This is the mathematical rule: To make a number negative, invert all bits and add 1. The educational videos of Sebastian Lague's Computer architecture series were extremely helpfull in explaining this concept ( I highly recommend giving it a watch, and all his other videos for that matter)*
+- *The Concept: This is the mathematical rule: To make a number negative, invert all bits and add 1. The educational videos of Sebastian Lague's Computer architecture series were extremely helpfull in explaining this concept.*
 - The Hardware: Controlled Inverter (XOR Gates)
 
     - **Invert:** The **XOR gates** act as programmable inverters. When the `SUBTRACT` line is On, they flip the B-input bits.
