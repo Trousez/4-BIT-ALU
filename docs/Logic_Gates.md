@@ -1,6 +1,8 @@
 
 ### Symbols for Logic Gates
-<img src="../images/logic-gates.png" alt="Types_of_logic_gates" width="400">
+<p align="center">
+  <img src="../images/logic-gates.png" alt="Types_of_logic_gates" width="600">
+</p>
 
 ## Buffer and Inverter
 
