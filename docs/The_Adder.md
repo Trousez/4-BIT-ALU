@@ -47,31 +47,27 @@ Verification of the logic were done using LOGISM.
 
 ![full_adder](../images/full-adder-built.jpeg)
 
-> ### Full Adder Colours (Colour coded wiring)
-> 
-> - **Red:** First half-Adder logic gate
-> - **Black:** Connections to ground 
-> - **Blue:** The second half-adder and the OR gate  
-> - **Green:** Connects each logic gate to each other
+ #### Full Adder Colours (Colour coded wiring)
+ 
+ - **Red:** First half-Adder logic gate
+ - **Black:** Connections to ground 
+ - **Blue:** The second half-adder and the OR gate  
+ - **Green:** Connects each logic gate to each other
 
 
-> [!example]- Log: 2nd Adder Crisis (3 Dec)
+> ### Error Log: 2nd Adder Crisis (3 Dec)
 > 
 > Issue: Carry-out LED only sometimes lit up
 > 
-> Solution: The B input resistor did not make proper connection with ground and depending on if you touch board it will make contact
+> Solution: The B input resistor did not make proper connection with ground and depending on if you touch board it will make contact. The resistors was swapped (with an adequate pin leg resistor).
 
-> [!example]- Log: NAND Adder Crisis (9 Dec)
-> 
-> Issue: Carry-out LED only sometimes lit up
-> 
-> Solution: The B input resistor did not make proper connection with ground and depending on if you touch board it will make contact
 
-> [!example]- Log: Transistors turned upside down (7 Dec)
+
+> ### Error Log: Transistors turned upside down (7 Dec)
 > 
->  Issue: Transistors were turned upside down for last nand full adder
+>  Issue: Transistors were turned upside down for the NAND implemented full adder
 > 
-> Solution: Although it still worked correctely when turned upside down. I made sure emiiter was connected to ground as usually one side has more electron when building the transitors to allow the current to smoothly move from one direction to the other. Swapping it gives it another current gain, although very small.
+> Solution: Although it still worked correctly when turned upside down. I made sure the Emitter was connected to ground. Transistors are physically aymmetrical (one side is more heavily doped with electrons during manufacuring) to allow the current to smoothly move from one direction to the other. Swapping them to the correct orientation restore the intended, higher current gain (although in testing the measured current gain was minimal)
 
 ![nand_adder](../images/nand-adder.jpeg)
 - Depicted is two full Adders made only of Nand gates. Each Fulle adder requires only 18 transistors
