@@ -30,7 +30,7 @@
 >
 > **Cause:** - Ground Bounce: Enabling `Subtract` "turns on/uses" 4 XOR gates and the carry in logic. This can potentially cause a sudden current surge flowing to ground. Breadboard grounds have a noticeable resistance due to unsoldered spring contacts, during the surge, the local ground can rise, breaking the logic threshold, which can explain the wrong output. Daisy chaining my breadboards (which I initially did) worsens this effect. 
 >
->**Solution:** - Avoid Daisy chaining breadboards, do Star Grounding rather. I also added Bypass capacitors (100nF + 10µF) across the power rails. This acts as a local energy reservoir during current spikes. The 100nF (ceramic as ceramic capacitor are good with high frequencies) capacitors filter out the high frequency noise, while the 10 µF capacitors provide the bulk energy needed to stabilize longer voltage drops.
+>**Solution:** - Avoid Daisy chaining breadboards, do Star Grounding rather. I also added Bypass capacitors (100nF + 10µF) across the power rails. This acts as a local energy reservoir during current spikes. The 100nF (ceramic capacitors were used as ceramic capacitor are good with high frequencies) capacitors filter out the high frequency noise, while the 10 µF capacitors provide the bulk energy needed to stabilize longer voltage drops.
 
 
 >### Error Log: Lights flicker on startup (9 Dec)
