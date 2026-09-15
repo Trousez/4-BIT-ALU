@@ -37,8 +37,8 @@
 >
 > **Issue:** When enabling power it seems all the light flicker for a split second.
 >
-> **Solution/Cause:**For tiny fraction of a second (maybe microseconds) the computer is in a state of chaos as the different paths of the ALU have different delays. Because it happens very fast our eyes register it as a quick flicker. This will not cause a problem, given that the clock perios is longer than the the time the system is in a state of calculation/chaos.
-
+> **Solution/Cause:**For tiny fraction of a second (maybe microseconds) the computer is in a state of chaos as the different paths of the ALU have different delays. Because it happens very fast our eyes register it as a quick flicker. This will not cause a problem, given that the clock period is longer than the the time the system is in a state of calculation/chaos. This is because the system captures the value solely on the clock edge, so it doesn't matter if its in chaos, aslong as at the clock edge 
+the correct value is being displayed/captured.
 
 ### Cause 1: Ground Loop Resistance (Ground Bounce)
 - Enabling subtraction turns on **4 XOR gates + Carry-In logic** at once.
