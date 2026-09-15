@@ -16,7 +16,7 @@
      ![two-complement](../images/two-complement.jpeg)
 
 - Note that the Subtract input signal is divided into two input buffer to "divide and conquer". One input buffer drive bit 0 and 1. The other drives bit 2 and 3.
-- The subtract input signal also goes to the carry in of the 4-Bit Adder. This acts as the "+1" operation of the Two's complement ( The final operation, completing the two's complement generator)
+- The subtract input signal also goes to the `Carry-In` of the 4-Bit Adder. This acts as the "+1" operation of the Two's complement ( The final operation, completing the two's complement generator)
       ![ALU](../images/ALU_1.png)
       ![ALU](../images/ALU.png)
 
