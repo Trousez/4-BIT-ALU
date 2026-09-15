@@ -38,33 +38,8 @@
 > **Issue:** When enabling power it seems all the light flicker for a split second.
 >
 > **Solution/Cause:**For tiny fraction of a second (maybe microseconds) the computer is in a state of chaos as the different paths of the ALU have different delays. Because it happens very fast our eyes register it as a quick flicker. This will not cause a problem, given that the clock period is longer than the the time the system is in a state of calculation/chaos. This is because the system captures the value solely on the clock edge, so it doesn't matter if its in chaos, aslong as at the clock edge 
-the correct value is being displayed/captured.
+the output is in a stable state/ displaying correct value to be captured.
 
-### Cause 1: Ground Loop Resistance (Ground Bounce)
-- Enabling subtraction turns on **4 XOR gates + Carry-In logic** at once.
-- This causes a sudden current surge flowing to ground.
-- Breadboard grounds have **high resistance** due to unsoldered spring contacts.
-- If only one thin jumper connects the ground rail, it behaves like a resistor.
-- During the surge, the local ground rises , breaking logic thresholds.
-- Daisy-chained breadboards worsen this: boards at the end receive weaker/shifted ground.(ground bounce)
-
-### Solution 1: Improve Grounding ("Star Grounding")
-- Use **multiple independent ground wires** to the main ground point.
-- All the breadboards 5v and ground will be conected to the central bus
-- Avoid daisy-chaining power rails between breadboards.
-
-### Solution 2: Add Bypass Capacitors
-- Place **100 nF** + **10 µF** capacitors across every breadboard's power rails.
-- Acts as a local energy reservoir during current spikes.
-- Example: Electrolytic 10 µF → long leg = 5 V, short leg = GND.
-
-### Cause 2 (After Fixing Ground): Light Flicker
-- After improving grounding, brief LED “sparks” occurs and then turn off.
-- For a tiny fraction of a second (maybe microseconds), the computer is in a state of chaos.
-- The electrical signals travel down the wire and hit the logic gates at different times.
-- The **Carry-In** might turn ON before the **XOR gates** have finished inverting the inputs.
-- This wrong calculation results in a "1" on an output wire that is supposed to be "0".
-- Because the LED was only on for a microsecond, your eye registers it as a "dim spark" rather than a full brightness.
 
 ### References
 - Breadboard stability: https://forum.digikey.com/t/breadboard-circuit-stability/36653  
