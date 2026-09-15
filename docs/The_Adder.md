@@ -70,7 +70,7 @@ Verification of the logic were done using LOGISM.
 > Solution: Although it still worked correctly when turned upside down. I made sure the Emitter was connected to ground. Transistors are physically aymmetrical (one side is more heavily doped with electrons during manufacuring) to allow the current to smoothly move from one direction to the other. Swapping them to the correct orientation restore the intended, higher current gain (although in testing the measured current gain was minimal)
 
 ![nand_adder](../images/nand-adder.jpeg)
-- Depicted is two full Adders made only of Nand gates. Each Fulle adder requires only 18 transistors
+- Depicted is two full Adders made only from Nand gates. Each Full Adder requires only 18 transistors
 
 ---
 ## The 4-Bit Ripple Carry Adder
