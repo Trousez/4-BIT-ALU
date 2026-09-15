@@ -80,6 +80,8 @@ Verification of the logic were done using LOGISM.
 
 ![ripple_carry_adder](../images/final-layout.png)
 
+Depicted above (Taken from The Global Science Network) is the diagram showcasing the modularity of the system. Each block is a individual breadboard. Eventually all the breadboards will the interconnected ( or easily swapped to change the overall architecture/ functionality of the ALU.
+
 
 *   ➡️ **[The Two's Complement Generator](../docs/Twos_Complement_Generator.md):**
 ---
