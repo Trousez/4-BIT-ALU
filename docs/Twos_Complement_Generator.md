@@ -9,6 +9,9 @@
  
      ![two-complement](../images/Subtract_1.png)
 
+  The four Binary inputs (From LSB to MSB) are labeled `-8,4,2,1` the XOR gates acts as the inverters.
+  - When `Subtract` is OFF(0): Buffers send `0` to all the XOR gates. When a Data bit is XOR'ed with a '0', it passes through completely unchanged(Tabel of the XOR gate)
+
      ![two-complement](../images/two-complement.jpeg)
 
 - Note that the Subtract input signal is divided into two input buffer to "divide and conquer". One input buffer drive bit 0 and 1. The other drives bit 2 and 3.
