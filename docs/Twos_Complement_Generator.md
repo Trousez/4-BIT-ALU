@@ -37,7 +37,7 @@
 >
 > **Issue:** When enabling power it seems all the light flicker for a split second.
 >
-> **Solution/Cause:**
+> **Solution/Cause:**For tiny fraction of a second (maybe microseconds) the computer is in a state of chaos as the different paths of the ALU have different delays. Because it happens very fast our eyes register it as a quick flicker. This will not cause a problem, given that the clock perios is longer than the the time the system is in a state of calculation/chaos.
 
 
 ### Cause 1: Ground Loop Resistance (Ground Bounce)
