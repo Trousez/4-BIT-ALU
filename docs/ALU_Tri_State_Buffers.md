@@ -4,11 +4,13 @@ In this ALU active-low, open-collector inverting tri-state buffers were used to 
 - *Active Low control:* Buffer enables when control pin is driven to 0V `ON` and disables when pulled to 5V `OFF`
 - *Inverting Data action*: When enabled an 
 
-| Enable Pin   | Data Input | Output Voltage | Logic State               |
-| ------------ | ---------- | -------------- | ------------------------- |
-| **5V** (OFF) | Any        | **5V** (From pull-up resistors)        | **High-Z** (Disconnected) |
-| **0V** (ON)  | 0V         | **5V**         | **Logic 1** (Disconnected) |
-| **0V** (ON)  | 5V         | **16.9 mV**     | **Logic 0** (Grounded)     |
+### ALU Tri-State Buffer (Active-Low, Inverting)
+
+| Enable Pin | Data Input | Output Voltage | Logic State | Bus Drive Mode |
+| :--- | :--- | :--- | :--- | :--- |
+| **5V (Disabled)** | Any | 5.0 V | **High-Z** | Disconnected (Passive Pull-Up) |
+| **0V (Enabled)**  | 0 V | 5.0 V | **Logic 1** | Inverted Output (Pulled High) |
+| **0V (Enabled)**  | 5 V | 16.9 mV | **Logic 0** | Inverted Output (Actively Sunk to GND) |
 
 - 16.9mV found according to LTSpice
 
