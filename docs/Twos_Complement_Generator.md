@@ -47,7 +47,9 @@ the output is in a stable state/ displaying correct value to be captured.
 - Distributed/ parasitic capacitance and resistance acts as a low pass filter, rounding the square waves.
 - Long wires can cause voltage spikes and even ground bounce, where the local ground shifts relative to true ground and trigger erratic logic states.
 - Breadboard stability: https://forum.digikey.com/t/breadboard-circuit-stability/36653
-  
+
+- There is a fallacy of the ideal ground. In theory, ground is an ideal zero-impedance node where return currents cuase zero differential voltage ($\Delta V = 0$).
+- In Pphysical circuits every return path cariies parasitic resistance (R) and Inductance (L) causing return currents to generate unwanted error voltages ( ($\Delta V = I R + L \frac{di}{dt}$) between different ground points.
 - Ground bounce and logic hazards: https://www.analog.com/en/resources/analog-dialogue/studentzone/studentzone-march-2017.html
 ---
 
