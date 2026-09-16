@@ -17,13 +17,10 @@ Connecting multiple modules (such as the ALU and Accumulator Register) directly 
 | :---: | :---: | :---: | :---: | :---: | :--- |
 | **$5\text{ V}$ (Disabled)** | Any | Cutoff (High-Z) | $5.0\text{ V}$ | *Released* | Disconnected (Passive Pull-Up) |
 | **$0\text{ V}$ (Enabled)** | **$5\text{ V}$ (Logic 1)** | Cutoff (High-Z) | $5.0\text{ V}$ | **Logic 1** | Module Releases Line (Bus Pulls High) |
-| **$0\text{ V}$ (Enabled)** | **$0\text{ V}$ (Logic 0)** | Saturated to GND | $16.9\text{ mV}$ | **Logic 0** | Active Sink ($V_{\text{CE(sat)}}$ via LTspice) |
+| **$0\text{ V}$ (Enabled)** | **$0\text{ V}$ (Logic 0)** | Saturated to GND | $16.9\text{ mV}$* | **Logic 0** | Active Sink ($V_{\text{CE(sat)}}$ via LTspice) |
 
-- 16.9mV found according to LTSpice
+- 16.9mV found according to LTSpice*
 
-- **Logic 1:** The gate connects the wire directly to **5V**. (Strong push).
-- **Logic 0:** The gate connects the wire directly to **Ground**. (Strong pull).
-  
 <p align="center">
   <img src="../images/Ltspice-tri-state.png" alt="LTSpice Tri-State Buffer Simulation" width="600">
 </p>
