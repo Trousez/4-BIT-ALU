@@ -27,7 +27,10 @@ In this ALU active-low, open-collector inverting tri-state buffers were used to 
 
 - **Logic 1:** The gate connects the wire directly to **5V**. (Strong push).
 - **Logic 0:** The gate connects the wire directly to **Ground**. (Strong pull).
-![LTSpice-tri-state](../images/Ltspice-tri-state.png)
+  
+<p align="center">
+  <img src="../images/Ltspice-tri-state.png" alt="LTSpice Tri-State Buffer Simulation" width="600">
+</p>
 
 - Note Enable is inverted, thus when it is low, the tri-state buffer is enabled and if it is high, the tri state buffer is disabled (hence the output will always be High-Z if disabled)
 - Tri state buffer connect to bus to ground for a 0 and disnonnect(high z) when other modules connect to the bus.
