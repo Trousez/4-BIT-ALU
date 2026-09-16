@@ -46,8 +46,11 @@ $$\text{Output} = A+B$$
 
 
 <p align="center">
-  <img src="../images/OR_1.jpeg" alt="OR Gate Implementation 1" width="48%">
-  <img src="../images/OR_2.jpeg" alt="OR Gate Implementation 2" width="48%">
+  <img src="../images/OR_1.jpeg" alt="OR Gate Implementation 1" width="68%">
+</p>
+
+<p align="center">
+  <img src="../images/OR_2.jpeg" alt="OR Gate Implementation 2" width="68%">
 </p>
 
 - Notice that there are two OR gates shown. Number 1 looks simpler (uses less transistors) but OR gate number 2 is much more useful when using it in tangent with other logic gates (when other logic gates are connected to it)
