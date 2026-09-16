@@ -1,4 +1,15 @@
-## ALU TRI-STATE BUFFERS
+## ALU TRI-STATE BUFFERS & Bus Architecture
+
+The Arithmetic Logic Unit (ALU) interfaces with the shared system bus using active-low, open-collector buffers. This architecture provides high-impedance isolation when disabled, preventing catastrophic bus contention and ensuring deterministic logic levels across all connected modules.
+
+---
+### Bus Contention & Open-collector Architecture
+
+Connecting multiple modules (such as the ALU and Accumulator Register) directly to a shared bus using, for example, push-pull outputs introduces severe hardware risk:
+
+- **Bus Contention:** If Module A outputs a high state ($5\text{ V}$) while Module B simultaneously asserts a low state ($0\text{ V}$), a dead short from power to ground occurs. The resulting overcurrent spike destroys output transistors and collapses rail voltages.
+- **Open-Collector Solution:** Instead of actively sourcing $5\text{ V}$, the buffer only actively sinks current to ground (**Logic 0**) or floats entirely (**High-Z**).
+- **Passive Bus Pull-Ups:** Dedicated pull-up resistors on the shared bus define the default quiescent state at $5\text{ V}$ (**Logic 1**). A module transmits by releasing the line to float high or clamping it to ground.
 
 In this ALU active-low, open-collector inverting tri-state buffers were used to connect each module to the bus.
 - *Active Low control:* Buffer enables when control pin is driven to 0V `ON` and disables when pulled to 5V `OFF`
