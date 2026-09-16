@@ -32,26 +32,12 @@ The buffer uses an active-low enable control pin ($\overline{\text{Enable}}$). T
 
 - All Bus data lines' initial state is `ON`, because of Pull-up resistors connected to Bus lines (thus providing a path to ground turns the data line off)
         
+>### Error Log: Thermal Bridging and Coupled Logic on Bits 4 and -8
+>
+> **Issue:** The bus bits 4 and -8 display exact same result, as if they are connected somehow.
+>
+> **Solution/Cause:** Using a multimeter confirmed there is continuity between these two bits (meaning a short circuit). After further inspection, it revealed the breadboard melted, causing a short circuit. The place where the breadboard melted was the same place a jumper cable was placed. I assume the jumper didn't make sufficient contact, which caused high-resistance mechanical termination. This created excesive heat under load and melted the surrounding plastic, causing a circuit (at least that is the only cause I can think of)
 
-- possible short circuit for output bits 4 and -8 on bus, either all or none switch on, 
-- I used the multimeter and confirmed there is continuity between the two bits, now we just need to find the short by isolation and process of elimination
-- the bus of the last two bits melted,probably because of loose conenction from jumper cables, problem looks solved if i use the solid core wiring.
-
-
-
-### 3. Engineering Log & Hardware Failure Analysis
-
-#### Issue: Thermal Bridging and Coupled Logic on Bits 4 and -8
-* **Symptom:** Bus bits 4 and -8 displayed identical states during execution, either turning on together or remaining completely dark. Physical inspection revealed localized plastic melting around the corresponding breadboard tie-points.
-* **Root Cause:**
-  1. Flexible stranded jumper wires produced intermittent, high-resistance mechanical terminations in the spring clips. Under switching loads and parasitic current loops, localized $I^2R$ power dissipation generated excessive heat, degrading the surrounding plastic.
-  2. The structural deformation allowed internal metal contact clips to shift and bridge, resulting in direct continuity ($0\ \Omega$) between the bit 4 and bit -8 bus rails.
-* **Corrective Actions:**
-  1. Replaced stranded patch leads with flush, pre-formed **22 AWG solid-core wire** to maintain secure contact pressure and eliminate stray strands.
-  2. Isolated and replaced the damaged breadboard section to clear physical rail shorts.
-  3. Validated rail isolation with an unpowered digital multimeter continuity test across all adjacent lines prior to re-applying power.
- 
-  4. 
 ![LTSpice-tri-state](../images/tri-state.png)
 
  ➡️ **[Registers](../docs/Registers.md):** 
