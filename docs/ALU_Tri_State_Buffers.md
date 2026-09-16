@@ -34,9 +34,9 @@ The buffer uses an active-low enable control pin ($\overline{\text{Enable}}$). T
         
 >### Error Log: Thermal Bridging and Coupled Logic on Bits 4 and -8
 >
-> **Issue:** The bus bits 4 and -8 display exact same result, as if they are connected somehow.
+> **Issue:** The bus bits 4 and -8 display the exact same result, as if they are connected somehow.
 >
-> **Solution/Cause:** Using a multimeter confirmed there is continuity between these two bits (meaning a short circuit). After further inspection, it revealed the breadboard melted, causing a short circuit. The place where the breadboard melted was the same place a jumper cable was placed. I assume the jumper didn't make sufficient contact, which caused high-resistance mechanical termination. This created excesive heat under load and melted the surrounding plastic, causing a circuit (at least that is the only cause I can think of)
+> **Solution/Cause:** Using a multimeter confirmed there is continuity between these two bits (meaning a short circuit). After further inspection, it revealed the breadboard melted, causing a short circuit. The place where the breadboard melted was the same place a jumper cable was placed. I assume the jumper didn't make sufficient contact, which caused high-resistance mechanical termination. This created excessive heat under load and melted the surrounding plastic, causing a short circuit (at least that is the only cause I can think of). I replaced the breadboard and used solid core wire instead, ensuring a proper connection.
 
 ![LTSpice-tri-state](../images/tri-state.png)
 
