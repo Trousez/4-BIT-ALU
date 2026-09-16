@@ -70,8 +70,11 @@ Outputs a logic high only when all inputs are high, implemented here using serie
 $$\text{Output} = A \cdot B$$
 
 <p align="center">
-  <img src="../images/AND_1.jpeg" alt="Discrete AND Gate Breadboard" width="48%">
-  <img src="../images/AND_2.png" alt="Discrete AND Gate Schematic" width="48%">
+  <img src="../images/AND_1.jpeg" alt="Discrete AND Gate Breadboard" width="68%">
+</p>
+
+<p align="center">
+  <img src="../images/AND_2.png" alt="Discrete AND Gate Schematic" width="68%">
 </p>
 
 ---
