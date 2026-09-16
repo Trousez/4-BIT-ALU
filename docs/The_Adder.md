@@ -59,7 +59,7 @@ Verification of the logic were done using LOGISM.
 > 
 > Issue: Carry-out LED only sometimes lit up
 > 
-> Solution: The B input resistor did not make proper connection with ground and depending on if you touch board it will make contact. The resistors was swapped (with an adequate pin leg resistor).
+> Solution: The B input resistor did not make proper connection with ground and depending on if you touch board it will make contact. The resistors was swapped (with an adequate pin length resistor).
 
 
 
