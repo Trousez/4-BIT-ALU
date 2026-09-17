@@ -1,5 +1,7 @@
-## Registers / Gated
-  
+## Registers / Gated D-Latch
+
+Each register bit consists of four discrete NAND gates configured as a level-triggered (transparent) storage cell, preceded by an input buffer and terminated with an output inverter.
+
   https://www.youtube.com/watch?v=jpe3DGVITvk&list=PL52rQn9fkWwNrZ2wSoO962_7hmBCqOrUZ&index=7
 
  <p align="center">
