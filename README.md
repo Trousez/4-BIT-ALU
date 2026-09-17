@@ -29,4 +29,4 @@ Click the links below to explore some of the documentation, schematics, and debu
 *   **[Memory](docs/Memory.md):** The 2-nibble (10-byte architecture) storage system and its integration with the data bus
 
 ### Project Review
-*   ➡️ **[Reflection & Upgrades](docs/Reflection_and_Upgrades.md):** Hardware debugging logs, power constraints, and functional upgrades like a hardware bit shifter and an interactive input port
+*   **[Reflection & Upgrades](docs/Reflection_and_Upgrades.md):** Hardware debugging logs, power constraints, and functional upgrades like a hardware bit shifter and an interactive input port
