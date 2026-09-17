@@ -2,7 +2,9 @@
   
   https://www.youtube.com/watch?v=jpe3DGVITvk&list=PL52rQn9fkWwNrZ2wSoO962_7hmBCqOrUZ&index=7
 
-  ![gated-d-latch](../images/gated-d-latch.jpeg)
+ <p align="center">
+  <img src="../images/gated-d-latch.jpeg" alt="Discrete Gated D-Latch" width="550">
+</p>
 
    > [!example]- Log: Light always on on the register (9 Dec)
 >
