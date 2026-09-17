@@ -6,7 +6,11 @@
   <img src="../images/gated-d-latch.jpeg" alt="Discrete Gated D-Latch" width="550">
 </p>
 
-   > [!example]- Log: Light always on on the register (9 Dec)
+<p align="center">
+  <img src="../images/Register-2.png" alt="Register Gatekeeper and Bus Interface" width="600">
+</p>
+
+> [!example]- Log: Light always on on the register (9 Dec)
 >
 > **Issue:** The jumper wire that goes fro mthe output of one nand gate to the input of the other didn't make a good connection, there was no continuiity
 > > **Issue 2:** Same thing happened again. i accidently grounded the base of the transistors 
