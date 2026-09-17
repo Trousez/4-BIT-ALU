@@ -1,13 +1,9 @@
-## Registers
+## Registers / Gated
   
   https://www.youtube.com/watch?v=jpe3DGVITvk&list=PL52rQn9fkWwNrZ2wSoO962_7hmBCqOrUZ&index=7
 
  <p align="center">
   <img src="../images/gated-d-latch.jpeg" alt="Discrete Gated D-Latch" width="550">
-</p>
-
-<p align="center">
-  <img src="../images/Register-2.png" alt="Register Gatekeeper and Bus Interface" width="600">
 </p>
 
 > [!example]- Log: Light always on on the register (9 Dec)
