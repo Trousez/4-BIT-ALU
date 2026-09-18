@@ -14,7 +14,6 @@ This video [Latches and Flip-flops](https://www.youtube.com/watch?v=y7Zf7Bv_J74)
   <img src="../images/Register-2.png" alt="Register Gatekeeper and Bus Interface" width="600">
 </p>
 
-  https://www.youtube.com/watch?v=jpe3DGVITvk&list=PL52rQn9fkWwNrZ2wSoO962_7hmBCqOrUZ&index=7
 
  <p align="center">
   <img src="../images/gated-d-latch.jpeg" alt="Discrete Gated D-Latch" width="550">
