@@ -19,14 +19,13 @@ This video [Latches and Flip-flops](https://www.youtube.com/watch?v=y7Zf7Bv_J74)
   <img src="../images/gated-d-latch.jpeg" alt="Discrete Gated D-Latch" width="550">
 </p>
 
-> ### Error Log: Light always on on the register (9 Dec)
+> ### Error Log: Light always on on the register 
 >
-> **Issue:** The jumper wire that goes fro mthe output of one nand gate to the input of the other didn't make a good connection, there was no continuiity
-> > **Issue 2:** Same thing happened again. i accidently grounded the base of the transistors 
+> **Issue:** The jumper wire that goes from the output of one NAND gate to the input of the other NAND didn't make a good connection, there was no continuity
 
-> ### Error Log: Unable to store a 1, can only store a 0 correctly (9 Dec)
+> ### Error Log: Unable to store a 1, can only store a 0 correctly
 >
-> **Issue:**  I use two types of transistors in this computer. Ones brought from RS Components ( High A grade). And ones from Temu (grade c). Although the gain of the two transistors are the same. The switching speed of the higher quality one is faster. I used a cheap one with the nand gates in the d latch. This cuased it to not be able to store a 1(it defualt to off). When i switched the transistors indicated in the schetck below, it correctly stored the values. One can use the ring i=occilator test to test the speed of transistors. Since i dont have an oscilloscope to read the frequeancy, i can either read the amount of current used by system, or use an arduino that has a frequancy pin and library that can complete the same task as the oscilloscope
+> **Issue:**  I use two types of transistors in this computer. Ones brought from RS Components (High A grade). And ones from Temu (grade C). Although the gain of the two transistors are the same. The switching speed of the higher quality one is faster. I used a cheap transistor with the NAND gates in the D latch. This caused it to not be able to store a 1 (it defualtED to `OFF`). When I switched the transistors indicated in the sketch below, it correctly stored the values. One can use the ring i=occilator test to test the speed of transistors. Since i dont have an oscilloscope to read the frequeancy, i can either read the amount of current used by system, or use an arduino that has a frequancy pin and library that can complete the same task as the oscilloscope
 
 -Now that the latches are connected toegethe im getting issues with output, it looks like if i use the cheap,slow transistors as the enable transistors, the latchs works proberly, however,ironically, if i use the more expensive ones at the enable pins, in tansint with the other cheaps ones it doesn;t work.
 ### The Physics: Inductive Kickback ($V = L \cdot \frac{di}{dt}$)
