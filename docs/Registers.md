@@ -8,7 +8,7 @@ This component is known as a Gated D-Latch. Here is breakdown of the component:
 -**Left side NANDs:** The two NAND gates on the left control the inputs to the memory element. Notice how top-left NAND output feeds directly input bottom-left NAND: this is cost effective way to get an inverted output, instead of traditionally building it with an invert (If you search on Google "D-latch", you will see it traditionally build with a inverter), this is because if clock is High, the output of NAND gate is just the invertion of the second input. The inverted input ensures the memory element never receive the invalid command "SET = `1` & RESET = `1`" which causes a race condition.
 -**The Memory Element (Right Side):** The two cross coupled NAND gates form a SR-Latch. This is the part that actually remembers the stored bit.
 
-This video from [Computer Science Lessons](https://www.youtube.com/watch?v=y7Zf7Bv_J74) explains the Gated D-latch wonderfully.
+This video [Latches and Flip-flops](https://www.youtube.com/watch?v=y7Zf7Bv_J74) explains the Gated D-latch wonderfully.
 
 <p align="center">
   <img src="../images/Register-2.png" alt="Register Gatekeeper and Bus Interface" width="600">
