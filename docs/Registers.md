@@ -19,12 +19,12 @@ This video [Latches and Flip-flops](https://www.youtube.com/watch?v=y7Zf7Bv_J74)
   <img src="../images/gated-d-latch.jpeg" alt="Discrete Gated D-Latch" width="550">
 </p>
 
-> Error Log: Light always on on the register (9 Dec)
+> ### Error Log: Light always on on the register (9 Dec)
 >
 > **Issue:** The jumper wire that goes fro mthe output of one nand gate to the input of the other didn't make a good connection, there was no continuiity
 > > **Issue 2:** Same thing happened again. i accidently grounded the base of the transistors 
 
- > [!example]- Unable to store a 1, can only store a 0 correctly (9 Dec)
+> ### Error Log: Unable to store a 1, can only store a 0 correctly (9 Dec)
 >
 > **Issue:**  I use two types of transistors in this computer. Ones brought from RS Components ( High A grade). And ones from Temu (grade c). Although the gain of the two transistors are the same. The switching speed of the higher quality one is faster. I used a cheap one with the nand gates in the d latch. This cuased it to not be able to store a 1(it defualt to off). When i switched the transistors indicated in the schetck below, it correctly stored the values. One can use the ring i=occilator test to test the speed of transistors. Since i dont have an oscilloscope to read the frequeancy, i can either read the amount of current used by system, or use an arduino that has a frequancy pin and library that can complete the same task as the oscilloscope
 
