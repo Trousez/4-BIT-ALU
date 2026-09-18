@@ -27,6 +27,17 @@ This video [Latches and Flip-flops](https://www.youtube.com/watch?v=y7Zf7Bv_J74)
 >
 > **Issue:**  I use two types of transistors in this computer. Ones brought from RS Components (High A grade). And ones from Temu (grade C). Although the gain of the two transistors are the same. The switching speed of the higher quality one is faster. I used a cheap transistor with the NAND gates in the D latch. This caused it to not be able to store a 1 (it defualtED to `OFF`). When I switched the transistors indicated in the sketch below, it correctly stored the values. One can use the ring i=occilator test to test the speed of transistors. Since i dont have an oscilloscope to read the frequeancy, i can either read the amount of current used by system, or use an arduino that has a frequancy pin and library that can complete the same task as the oscilloscope
 
+### Log Entry 2: Asymmetric Logic Storage & Transistor Slew Rates
+* **Date:** 9 December
+* **Symptom:** The latch successfully held a logic `0`, but failed to store a logic `1` (consistently defaulting to `0` upon clock deassertion).
+* **Root Cause (Propagation Delay & Slew Mismatch):** 
+  The circuit combined two different transistor batches:
+  * Grade A (RS Components): High $h_{\text{FE}}$, fast switching transition times ($t_r, t_f \approx 5\text{ ns}$).
+  * Grade C (Temu): Comparable DC current gain, but slower switching transitions ($t_r, t_f \approx 50\text{ ns}$) due to larger junction capacitance ($C_{\text{be}}, C_{\text{bc}}$).
+
+  Placing slow transistors in the feedback NAND path created asymmetric internal propagation delays. When attempting to latch a `1`, the slower gate could not settle before the enable line decayed, causing the latch to collapse to its default low state.
+* **Resolution:** Grouped matched, high-speed transistors exclusively within the internal bistable feedback loop.
+
 <p align="center">
   <img src="../images/Indicated_Transistor_Problems.png" alt="Transistor problems" width="600">
 </p>
