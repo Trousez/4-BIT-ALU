@@ -1,10 +1,10 @@
 ## Clock
 <p align="center">
-  <img src="../images/Clock_LTSpice.jpg" alt="Clock LTspice" width="600">
+  <img src="../images/Clock_LTSpice.jpg" alt="Clock LTspice" width="800">
 </p>
 
 <p align="center">
-  <img src="../images/Clock_Timing.jpg" alt="Clock timing diagram" width="600">
+  <img src="../images/Clock_Timing.jpg" alt="Clock timing diagram" width="900">
 </p>
 
  > ### Error Log: Bit 4 gave same output as clock
