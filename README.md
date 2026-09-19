@@ -7,7 +7,7 @@ This logbook documents my journey building a functional 4-bit ALU entirely from 
 Heavily inspired by the detailed schematics and instructional videos of the [Global Science Network](https://www.youtube.com/@GlobalScienceNetwork), this document serves as a raw, ground-up record of my notes, design decisions, and debugging logs. It is a working reference of practical engineering challenges, kept intentionally unpolished to capture the authentic, iterative process of bringing complex hardware to life.
 
 ## The Hardware Reality
-Building logic gates from raw physical components introduced electrical engineering challenges that do not exist in software simulations:
+Building logic gates from raw physical components introduced numerous electrical engineering challenges:
 *   **The Build:** Constructed using 404 discrete transistors and over 30 meters of wiring on standard breadboards. No ICs were allowed for logic computation
 *   **Power and Breadboard Limitations:** At peak operation, the computer drew immense current. Distributing this load required multiple power connections to prevent the breadboards from melting. The breadboards induced parasitic elements that needed to be overcome.
 *   **Physical Debugging:** Required navigating microscopic faults, loose jumper wires, ground loops, inductive kickback and more.
