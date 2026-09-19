@@ -15,7 +15,7 @@ To prevent bus contention on the shared 4-bit data bus, memory nibbles interface
 
 ### Buffer Terminal Characteristics:
 
-* **Active-Low Enable ($\overline{\text{Enable}}$):** Marked by the inversion bubble on the top control line. Driven low ($0\text{ V}$) to assert the nibble onto the bus, and pulled high ($5\text{ V}$) to disconnect.
+* **Active-Low Enable ($\overline{\text{Enable}}$):** Driven low ($0\text{ V}$) to assert the nibble onto the bus, and pulled high ($5\text{ V}$) to disconnect.
 * **Inverting Data Path:** The inversion bubble on the output terminal denotes polarity inversion.
 * **Open-Collector Output:**
   * When disabled ($\overline{\text{Enable}} = 1$), the output transistor is placed into cutoff, presenting a high-impedance (**High-Z**) state that releases the bus.
