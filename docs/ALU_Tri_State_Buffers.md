@@ -42,6 +42,8 @@ The buffer uses an active-low enable control pin ($\overline{\text{Enable}}$). T
   <img src="../images/tri-state.png" alt="Discrete Tri-State Buffer Schematic" width="400">
 </p>
 
+
+The next section details the Register building process and assembly.
  ➡️ **[Registers](../docs/Registers.md):** 
  
 ---
