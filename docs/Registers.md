@@ -72,11 +72,41 @@ Captures (Only when Enabled) the value on the Bus.
 >
 > **Issue:**  The Resistor was loose, so a new resistor was placed and this fixed the issue
 
- ![output-register](../images/output-register.png)
- 
+<p align="center">
+  <img src="../images/output-register.png" alt="output-register" width="800">
+</p>
+
  ---
  ## Accumalator Register
-  ![Accumulator](../images/accumulator.jpeg)
+
+The Accumulator is a specialized 4-bit register that serves as both the primary operand source (Input $A$) and the destination register for the Arithmetic Logic Unit (ALU).
+
+Because the Accumulator output feeds directly back into the ALU inputs while simultaneously latching ALU computation results, a transparent latch cannot be used here. Doing so would form an asynchronous feedback race condition where outputs oscillate uncontrollably during the high clock phase. To ensure deterministic execution, the Accumulator is implemented using **edge-triggered Master-Slave D Flip-Flops** (specifically a falling-edge triggered one).
+
+<p align="center">
+  <img src="../images/Accumulator_diagram.jpg" alt="Accumulator" width="600">
+</p>
+
+### Master-Slave Architecture 
+
+Each bit of the Accumulator is constructed by cascading two discrete gated D-latches in series, controlled by complementary clock phases.
+
+1. **Master Latch (Input Stage):** Receives raw data from the input buffers and is clocked directly by the gated clock line ($\text{CLK}_{\text{GATED}}$).
+2. **Slave Latch (Output Stage):** Receives the internal state of the Master latch and is clocked through an inverter (`CLK INV`).
+   
+#### Trigger Polarity Derivation
+* **Inverter on Slave Enable (Current Design):** 
+  * While $\text{CLK} = 1$, the Master is transparent (tracking data) and the Slave is latched shut.
+  * On the **falling edge ($\text{CLK} \downarrow$)**, the Master locks its state shut, and the Slave immediately opens, propagating the settled Master value to the output.(making it Falling-Edge Triggered
+
+
+<p align="center">
+  <img src="../images/accumulator.jpeg" alt="Accumulator" width="600">
+</p>
+
+
+
+
 
   *   ➡️ **[Clock](../docs/Clock.md):**
 ---
