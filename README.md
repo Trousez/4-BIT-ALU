@@ -21,7 +21,6 @@ Click the links below to explore some of the documentation, schematics, and debu
 *   **[The Adder](docs/The_Adder.md):** The 4-Bit Ripple Carry Adder built from chained Full Adders and Half Adders
 *   **[The Two's Complement Generator](docs/Twos_Complement_Generator.md):** How the system handles subtraction using programmable XOR inverters and carry-in logic
 *   **[ALU Tri-State Buffers](docs/ALU_Tri_State_Buffers.md):** The open-collector buffers that prevent catastrophic short circuits on the shared data bus
-*   **[Possible ALU Additions](docs/Possible_ALU_Additions.md):** Future implementation concepts, including the Zero Flag and routing logic
 
 ### Control & Storage
 *   **[Registers](docs/Registers.md):** The Gated D-Latches used for general storage, and the Master-Slave Data Flip-Flops used for the Accumulator
@@ -29,4 +28,4 @@ Click the links below to explore some of the documentation, schematics, and debu
 *   **[Memory](docs/Memory.md):** The 2-nibble (10-byte architecture) storage system and its integration with the data bus
 
 ### Project Review
-*   **[Reflection & Upgrades](docs/Reflection_and_Upgrades.md):** Hardware debugging logs, power constraints, and functional upgrades like a hardware bit shifter and an interactive input port
+*   **[Final Product & Reflection](docs/Final_Product_And_Reflection.md):** Hardware debugging logs, final product, and reflection on the building process and the future.
