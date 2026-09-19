@@ -33,5 +33,5 @@ The Green wave indicates the `CLK` Output, while the Blue wave indicates the inv
 
 The next section details the Memory building process and assembly.
 
-**[Memory Building Process](docs/Memory.md):**
+➡️ **[Memory Building Process](docs/Memory.md):**
  
