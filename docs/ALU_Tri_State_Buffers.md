@@ -44,6 +44,7 @@ The buffer uses an active-low enable control pin ($\overline{\text{Enable}}$). T
 
 
 The next section details the Register building process and assembly.
+
  ➡️ **[Registers](../docs/Registers.md):** 
  
 ---
