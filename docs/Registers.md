@@ -48,10 +48,11 @@ This video [Latches and Flip-flops](https://www.youtube.com/watch?v=y7Zf7Bv_J74)
 > ### Error Log: Unable to store a 1, can only store a 0 correctly
 >
 > **Symptom:** When I connected the common enable rail together of the 4 bit register, depending on what transistor I used I got "erratic" latching .
+> 
 > **Issue:** It looks like if I use the cheap, slow transistors (From my trusty friend Temu) as the enable transistors, the 4 latches works perfectly, however, ironically, if I use the more expensive ones (From RS components) at the enable pins, in tangent with the other cheaps ones it doesn't work.
-> **Why does this happen?:** Absolutely no clue, it cannot be slew rates like the previous error log since the enable pins aren't depended on the slew rates like the interconnected NANDs were in the latch. Online resources ("Chatgpt") says it can be inductive Kickback. " Fast transistors draw their base drive current in nanoseconds ($\text{high } \frac{di}{dt}$), exciting an undamped $LC$ resonance between wire inductance and transistor input capacitances.
-  * **Resulting Ringing:** The enable rail oscillates violently during transitions ($5\text{ V} \to 0\text{ V} \to 2.5\text{ V} \to 0\text{ V}$). The latches register these transient spikes as rapid multiple clock edges, capturing unstable bus data.
-  * **The Anomaly:** Slower transistors on the enable input mitigate this effect because their gradual transition ($\text{lower } \frac{di}{dt}$) suppresses ringing without exciting high-frequency resonance"
+> 
+> **Why does this happen?:** Absolutely no clue, it cannot be slew rates like the previous error log since the enable pins aren't depended on the slew rates like the interconnected NANDs were in the latch. Online resources (My other trusty friend the LLM) says it can be inductive Kickback. " Fast transistors draw their base drive current in nanoseconds ($\text{high } \frac{di}{dt}$), exciting an undamped $LC$ resonance between wire inductance and transistor input capacitances. **Resulting Ringing:** The enable rail oscillates violently during transitions ($5\text{ V} \to 0\text{ V} \to 2.5\text{ V} \to 0\text{ V}$). The latches register these transient spikes as rapid multiple clock edges, capturing unstable bus data. **The Anomaly:** Slower transistors on the enable input mitigate this effect because their gradual transition ($\text{lower } \frac{di}{dt}$) suppresses ringing without exciting high-frequency resonance""
+> Somehow I feel the like the LLMs answer isn't quite right.
     
 ### The Physics: Inductive Kickback ($V = L \cdot \frac{di}{dt}$)
 
