@@ -82,7 +82,7 @@ Verification of the logic were done using LOGISM.
 
 Depicted above (Taken from The Global Science Network) is the diagram showcasing the modularity of the system. Each block is a individual breadboard. Eventually all the breadboards will be interconnected (or easily swapped to change the overall architecture/functionality of the ALU.
 
-
+The next section details the Tw's Complement Generator building process and assembly.
 *   ➡️ **[The Two's Complement Generator](../docs/Twos_Complement_Generator.md):**
 ---
 
