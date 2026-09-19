@@ -32,5 +32,4 @@ The Green wave indicates the `CLK` Output, while the Blue wave indicates the inv
 > **Issue:**  I used a jumper wire for Ground but it didn't make a good connection. I swapped it with a solid-core wire and this fixed the issue.
 
 **[Memory](docs/Memory.md):**
----
-
+ 
