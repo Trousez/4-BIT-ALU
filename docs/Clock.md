@@ -13,7 +13,7 @@ The half-period ($t$) for each phase is set by the $RC$ time constant of the bas
 
 $$t \approx \ln(2) \cdot R_{\text{base}} \cdot C = 0.693 \cdot 100\text{ k}\Omega \cdot 10\ \mu\text{F} \approx 0.693\text{ s}$$
 Total period:
-$$T = t_1 + t_2 \approx 2 \times 0.693\text{ s} \approx 1.39\text{ s}$$
+$$T  \approx 2 \times 0.693\text{ s} \approx 1.39\text{ s}$$
 Frequency:
 $$f = \frac{1}{T} \approx 0.72\text{ Hz}$$
 
