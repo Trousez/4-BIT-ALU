@@ -26,7 +26,9 @@ This video [Latches and Flip-flops](https://www.youtube.com/watch?v=y7Zf7Bv_J74)
 > ### Error Log: Unable to store a 1, can only store a 0 correctly
 >
 > **Issue:**  I used two types of transistors in this computer. Ones brought from RS Components (High A grade). And ones from Temu (possible grade C). Although the gain of the two transistors are the same, the switching speed/slew rates may differ. I used a cheap transistor with the NAND gates in the D latch. This caused it to not be able to store a 1 (it defaulted to `OFF`). When I switched the transistors indicated in the sketch below, it correctly stored the values. One can use the ring occilator test (with an Arduino) to test the speed of transistors. Since I don't have an oscilloscope to read the frequeancy, I can either read the amount of current used by system, or use an Arduino that has a frequancy pin and library that can complete the same task as the oscilloscope ("relatively the same task").
+> 
 > Placing slow transistors in the feedback NAND path created asymmetric internal propagation delays. When attempting to latch a `1`, the slower gate could not settle before the enable line decayed, causing the latch to collapse to its default low state (this is the only cause I could come up with)
+> 
 > **Resolution:** Use high-speed transistors exclusively within the internal bistable feedback loop.
 
 <p align="center">
