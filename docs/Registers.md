@@ -49,12 +49,8 @@ This video [Latches and Flip-flops](https://www.youtube.com/watch?v=y7Zf7Bv_J74)
 
 [The "Ring Oscillator" Test transistors](https://hackaday.io/project/184912-8-bit-transistor-computer/log/205741-gates-ring-oscillator-speed-tests)
 
-### 1. The Component: Gated D-Latch
 
-- **Type:** Level-Triggered D-Latch (also known as a "Transparent Latch").
-- **Why:** It is simpler and uses fewer transistors  than the Master-Slave Flip-Flops used in the Accumulator. Since these registers load stable data from the bus and don't feed back into themselves immediately, this simpler design is safe.
-
-### 2. The Control Logic: The "AND" Gate
+### The Control Logic: The "AND" Gate
 
 You do not connect the Clock directly to the Latch. You use a "Gatekeeper" circuit to ensure the register only updates when you want it to.
 
@@ -67,7 +63,10 @@ You do not connect the Clock directly to the Latch. You use a "Gatekeeper" circu
   ---
   ### Output Register
   
-  ![output-register](../images/output-register-2.png)
+ <p align="center">
+  <img src="../images/Register-2.png" alt="Register Gatekeeper and Bus Interface" width="600">
+</p>
+
    > [!example]- Bit 4 always stayed on (Des 15)
 >
 > **Issue:**  resistor was loose, so a new resistor was placed and this fixed the issue---
