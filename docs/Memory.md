@@ -11,7 +11,7 @@ The memory block is partitioned into two independently addressable 4-bit nibbles
 <p align="center">
   <img src="../images/Symbol_Memory.jpg" alt="Clock LTspice" width="400">
 </p>
-To prevent bus contention on the shared 4-bit data bus, memory nibbles interface with the lines using *active-low, inverting open-collector tri-state buffers*
+To prevent bus contention on the shared 4-bit data bus, memory nibbles interface with the lines using "active-low, inverting open-collector tri-state buffers".
 
 ### Buffer Terminal Characteristics:
 
