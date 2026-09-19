@@ -59,7 +59,9 @@ You do not connect the Clock directly to the Latch. You use a "Gatekeeper" circu
 - **Input B:** `Load Enable` (The specific command wire, e.g., "Load Reg B").
 - **Output:** Goes to the **Enable/G** pins of all 4 bits in the register.
 
-  ![Registers](../images/Register-2.png)
+ <p align="center">
+  <img src="../images/Register-2.png" alt="Register Gatekeeper and Bus Interface" width="600">
+</p>
   ---
   ### Output Register
   
