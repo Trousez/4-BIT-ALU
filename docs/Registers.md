@@ -33,19 +33,7 @@ This video [Latches and Flip-flops](https://www.youtube.com/watch?v=y7Zf7Bv_J74)
   <img src="../images/Indicated_Transistor_Problems.png" alt="Transistor problems" width="600">
 </p>
 
-### Log Entry 3: Inductive Ringing on Shared Enable Rails ($V = L \frac{di}{dt}$)
-* **Date:** 10 December
-* **Symptom:** When 4 bit latches were tied to a common enable rail, using high-speed transistors on the enable input caused erratic latching and corrupted bits across the register.
-* **Physics & Failure Analysis:**
-  $$\Delta V = L \cdot \frac{di}{dt}$$
-  * **Conductor Inductance ($L$):** The long, daisy-chained breadboard enable wire introduces roughly $20\text{ nH/inch}$ of parasitic inductance.
-  * **Current Slew Rate ($\frac{di}{dt}$):** Fast transistors draw their base drive current in nanoseconds ($\text{high } \frac{di}{dt}$), exciting an undamped $LC$ resonance between wire inductance and transistor input capacitances.
-  * **Resulting Ringing:** The enable rail oscillates violently during transitions ($5\text{ V} \to 0\text{ V} \to 2.5\text{ V} \to 0\text{ V}$). The latches register these transient spikes as rapid multiple clock edges, capturing unstable bus data.
-  * **The Anomaly:** Slower transistors on the enable input mitigate this effect because their gradual transition ($\text{lower } \frac{di}{dt}$) suppresses ringing without exciting high-frequency resonance.
-* **Design Rule:** Ensure uniform transistor sourcing across functional blocks, and place a local $100\text{ nF}$ ceramic decoupling capacitor near the enable distribution line to damp inductive spikes.
-
-
-> ### Error Log: Unable to store a 1, can only store a 0 correctly
+> ### Error Log: Better transistors at the Enable pins give incorrect outputs?
 >
 > **Symptom:** When I connected the common enable rail together of the 4 bit register, depending on what transistor I used I got "erratic" latching .
 > 
