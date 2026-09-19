@@ -19,31 +19,40 @@ This video [Latches and Flip-flops](https://www.youtube.com/watch?v=y7Zf7Bv_J74)
   <img src="../images/gated-d-latch.jpeg" alt="Discrete Gated D-Latch" width="550">
 </p>
 
-> ### Error Log: Light always on on the register 
+> ### Error Log: Light always 1 on the register 
 >
 > **Issue:** The jumper wire that goes from the output of one NAND gate to the input of the other NAND didn't make a good connection, there was no continuity
 
 > ### Error Log: Unable to store a 1, can only store a 0 correctly
 >
-> **Issue:**  I use two types of transistors in this computer. Ones brought from RS Components (High A grade). And ones from Temu (grade C). Although the gain of the two transistors are the same. The switching speed of the higher quality one is faster. I used a cheap transistor with the NAND gates in the D latch. This caused it to not be able to store a 1 (it defualtED to `OFF`). When I switched the transistors indicated in the sketch below, it correctly stored the values. One can use the ring i=occilator test to test the speed of transistors. Since i dont have an oscilloscope to read the frequeancy, i can either read the amount of current used by system, or use an arduino that has a frequancy pin and library that can complete the same task as the oscilloscope
-
-### Log Entry 2: Asymmetric Logic Storage & Transistor Slew Rates
-* **Date:** 9 December
-* **Symptom:** The latch successfully held a logic `0`, but failed to store a logic `1` (consistently defaulting to `0` upon clock deassertion).
-* **Root Cause (Propagation Delay & Slew Mismatch):** 
-  The circuit combined two different transistor batches:
-  * Grade A (RS Components): High $h_{\text{FE}}$, fast switching transition times ($t_r, t_f \approx 5\text{ ns}$).
-  * Grade C (Temu): Comparable DC current gain, but slower switching transitions ($t_r, t_f \approx 50\text{ ns}$) due to larger junction capacitance ($C_{\text{be}}, C_{\text{bc}}$).
-
-  Placing slow transistors in the feedback NAND path created asymmetric internal propagation delays. When attempting to latch a `1`, the slower gate could not settle before the enable line decayed, causing the latch to collapse to its default low state.
-* **Resolution:** Grouped matched, high-speed transistors exclusively within the internal bistable feedback loop.
+> **Issue:**  I used two types of transistors in this computer. Ones brought from RS Components (High A grade). And ones from Temu (possible grade C). Although the gain of the two transistors are the same, the switching speed/slew rates may differ. I used a cheap transistor with the NAND gates in the D latch. This caused it to not be able to store a 1 (it defaulted to `OFF`). When I switched the transistors indicated in the sketch below, it correctly stored the values. One can use the ring occilator test (with an Arduino) to test the speed of transistors. Since I don't have an oscilloscope to read the frequeancy, I can either read the amount of current used by system, or use an Arduino that has a frequancy pin and library that can complete the same task as the oscilloscope ("relatively the same task").
+> Placing slow transistors in the feedback NAND path created asymmetric internal propagation delays. When attempting to latch a `1`, the slower gate could not settle before the enable line decayed, causing the latch to collapse to its default low state (this is the only cause I could come up with)
+> **Resolution:** Use high-speed transistors exclusively within the internal bistable feedback loop.
 
 <p align="center">
   <img src="../images/Indicated_Transistor_Problems.png" alt="Transistor problems" width="600">
 </p>
 
+### Log Entry 3: Inductive Ringing on Shared Enable Rails ($V = L \frac{di}{dt}$)
+* **Date:** 10 December
+* **Symptom:** When 4 bit latches were tied to a common enable rail, using high-speed transistors on the enable input caused erratic latching and corrupted bits across the register.
+* **Physics & Failure Analysis:**
+  $$\Delta V = L \cdot \frac{di}{dt}$$
+  * **Conductor Inductance ($L$):** The long, daisy-chained breadboard enable wire introduces roughly $20\text{ nH/inch}$ of parasitic inductance.
+  * **Current Slew Rate ($\frac{di}{dt}$):** Fast transistors draw their base drive current in nanoseconds ($\text{high } \frac{di}{dt}$), exciting an undamped $LC$ resonance between wire inductance and transistor input capacitances.
+  * **Resulting Ringing:** The enable rail oscillates violently during transitions ($5\text{ V} \to 0\text{ V} \to 2.5\text{ V} \to 0\text{ V}$). The latches register these transient spikes as rapid multiple clock edges, capturing unstable bus data.
+  * **The Anomaly:** Slower transistors on the enable input mitigate this effect because their gradual transition ($\text{lower } \frac{di}{dt}$) suppresses ringing without exciting high-frequency resonance.
+* **Design Rule:** Ensure uniform transistor sourcing across functional blocks, and place a local $100\text{ nF}$ ceramic decoupling capacitor near the enable distribution line to damp inductive spikes.
 
--Now that the latches are connected toegethe im getting issues with output, it looks like if i use the cheap,slow transistors as the enable transistors, the latchs works proberly, however,ironically, if i use the more expensive ones at the enable pins, in tansint with the other cheaps ones it doesn;t work.
+
+> ### Error Log: Unable to store a 1, can only store a 0 correctly
+>
+> **Symptom:** When I connected the common enable rail together of the 4 bit register, depending on what transistor I used I got "erratic" latching .
+> **Issue:** It looks like if I use the cheap, slow transistors (From my trusty friend Temu) as the enable transistors, the 4 latches works perfectly, however, ironically, if I use the more expensive ones (From RS components) at the enable pins, in tangent with the other cheaps ones it doesn't work.
+> **Why does this happen?:** Absolutely no clue, it cannot be slew rates like the previous error log since the enable pins aren't depended on the slew rates like the interconnected NANDs were in the latch. Online resources ("Chatgpt") says it can be inductive Kickback. " Fast transistors draw their base drive current in nanoseconds ($\text{high } \frac{di}{dt}$), exciting an undamped $LC$ resonance between wire inductance and transistor input capacitances.
+  * **Resulting Ringing:** The enable rail oscillates violently during transitions ($5\text{ V} \to 0\text{ V} \to 2.5\text{ V} \to 0\text{ V}$). The latches register these transient spikes as rapid multiple clock edges, capturing unstable bus data.
+  * **The Anomaly:** Slower transistors on the enable input mitigate this effect because their gradual transition ($\text{lower } \frac{di}{dt}$) suppresses ringing without exciting high-frequency resonance"
+    
 ### The Physics: Inductive Kickback ($V = L \cdot \frac{di}{dt}$)
 
 - **The Breadboard:** Your Enable line is a long wire connecting 4 latches. Long wires have **Inductance** ($L$).
