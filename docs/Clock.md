@@ -38,6 +38,6 @@ The clock circuit is on the left of the breadboard. The 2 Nibbles of memory is o
 
 The next section details the Memory building process and assembly.
 
-➡️ **[Memory Building Process](../Memory.md):**
+➡️ **[Memory Building Process](../docs/Memory.md):**
 
  
