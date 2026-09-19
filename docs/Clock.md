@@ -31,6 +31,11 @@ The Green wave indicates the `CLK` Output, while the Blue wave indicates the inv
 >
 > **Issue:**  I used a jumper wire for Ground but it didn't make a good connection. I swapped it with a solid-core wire and this fixed the issue.
 
+The clock circuit is on the left of the breadboard. The 2 Nibbles of memory is on the right, which will be discussed in the next section.
+<p align="center">
+  <img src="../images/clock.jpeg" alt="Clock LTspice" width="800">
+</p>
+
 The next section details the Memory building process and assembly.
 
 ➡️ **[Memory Building Process](docs/Memory.md):**
