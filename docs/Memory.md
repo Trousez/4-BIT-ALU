@@ -36,4 +36,7 @@ To prevent bus contention on the shared 4-bit data bus, memory nibbles interface
   <img src="../images/clock.jpeg" alt="Clock LTspice" width="800">
 </p>
 
+Next we look at the final product and some reflections:
+**[Final Product & Reflection](../docs/Final_Product_And_Reflection.md):** 
+
 
