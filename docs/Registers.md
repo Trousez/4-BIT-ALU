@@ -123,7 +123,9 @@ The decision to configure the Accumulator for **Falling-Edge Triggering** direct
    * When the clock transitions low ($\text{CLK} \downarrow$), carry propagation is complete. The Master isolates the verified final sum, and the Slave presents it cleanly to the system.
   
 Thus this creates a "safety buffer" in time before it "commits" the memory.
-  
+
+
+The next section details the Clock building process and assembly.  
   *   ➡️ **[Clock](../docs/Clock.md):**
 ---
 
