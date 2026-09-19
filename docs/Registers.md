@@ -46,23 +46,8 @@ This video [Latches and Flip-flops](https://www.youtube.com/watch?v=y7Zf7Bv_J74)
 > Somehow I feel the like the LLMs answer isn't quite right.
 >
 > **Solution:** Used the cheaper "slower" transistors at the enable pins for all the Latches
-    
-### The Physics: Inductive Kickback ($V = L \cdot \frac{di}{dt}$)
 
-- **The Breadboard:** Your Enable line is a long wire connecting 4 latches. Long wires have **Inductance** ($L$).
-- **The "Temu" Transistor (Slow):** It turns on lazily (e.g., in 50 nanoseconds). The current ramps up smoothly. The inductance doesn't mind.
-- **The "High Quality" Transistor (Fast):** It snaps ON instantly (e.g., in 5 nanoseconds).
-    
-    - **The Equation:** A massive change in current ($di$) in a tiny time ($dt$) creates a **Voltage Spike**.
-
-    - **The Result (Ringing):** The voltage on the Enable line bounces violently (e.g., 5V $\to$ 0V $\to$ 2
-    - **The Crash:** The latches see this bounce as "Enable... Disable... Enable...". They get confused and latch garbage data.
-
-Conpclusion: I have to be consistent where and i use what braand of transistor to ensure reliability..
-
-The "Ring Oscillator" Test transistors
-
-https://hackaday.io/project/184912-8-bit-transistor-computer/log/205741-gates-ring-oscillator-speed-tests
+[The "Ring Oscillator" Test transistors](https://hackaday.io/project/184912-8-bit-transistor-computer/log/205741-gates-ring-oscillator-speed-tests)
 
 ### 1. The Component: Gated D-Latch
 
