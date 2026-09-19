@@ -65,15 +65,14 @@ You do not connect the Clock directly to the Latch. You use a "Gatekeeper" circu
   ---
   ### Output Register
   
- <p align="center">
-  <img src="../images/Register-2.png" alt="Register Gatekeeper and Bus Interface" width="600">
-</p>
+Captures (Only when Enabled) the value on the Bus.
 
-   > [!example]- Bit 4 always stayed on (Des 15)
+> > ### Error Log: - Bit 4 always stayed ON
 >
-> **Issue:**  resistor was loose, so a new resistor was placed and this fixed the issue---
+> **Issue:**  The Resistor was loose, so a new resistor was placed and this fixed the issue
 
  ![output-register](../images/output-register.png)
+ 
  ---
  ## Accumalator Register
   ![Accumulator](../images/accumulator.jpeg)
