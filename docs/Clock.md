@@ -1,6 +1,6 @@
 ## Clock
 
-The clock is a Astable multivibrator. It includes an output buffer/Inverters to cleanly output a square pulse to the Bus, and hence to the rest of the circuits.
+The clock is a Astable multivibrator. It includes output buffers/Inverters to cleanly output a square pulse to the Bus, and hence to the rest of the circuits.
 
 ### How It Oscillates:
 * It has no stable state (astable). It continuously flip-flops between two quasi-stable states through capacitive feedback.
