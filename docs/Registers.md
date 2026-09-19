@@ -97,7 +97,14 @@ Each bit of the Accumulator is constructed by cascading two discrete gated D-lat
 #### Trigger Polarity Derivation
 * **Inverter on Slave Enable (Current Design):** 
   * While $\text{CLK} = 1$, the Master is transparent (tracking data) and the Slave is latched shut.
-  * On the **falling edge ($\text{CLK} \downarrow$)**, the Master locks its state shut, and the Slave immediately opens, propagating the settled Master value to the output.(making it Falling-Edge Triggered
+  * On the **falling edge ($\text{CLK} \downarrow$)**, the Master locks its state shut, and the Slave immediately opens, propagating the settled Master value to the output.(making it Falling-Edge Triggered)
+ 
+|Clock Signal|Data Input|Load Enable|Master Internal|Slave Output (Q)|Meaning|
+|---|---|---|---|---|---|
+|**High (1)**|**Change**|**1**|**Follows Input**|**No Change**|**"Thinking Time"** (ALU calculates, Master listens, Output is stable).|
+|**Falling (**$\downarrow$**)**|**Stable**|**1**|**Locks**|**Updates to Input**|**"Latching Time"** (The update happens here, at the end).|
+|**Low (0)**|X|X|**Locked**|**Stable**|**Safe State** (Waiting for next cycle).|
+
 
 
 <p align="center">
@@ -114,6 +121,8 @@ The decision to configure the Accumulator for **Falling-Edge Triggering** direct
    * Setting the Master latch to be transparent during $\text{CLK} = 1$ turns the entire high clock half-period into an integrated settlement buffer.
    * The Master latch observes the initial ripple glitches, but because the Slave latch remains locked ($E_{\text{Slave}} = 0$), these transient glitches never reach the output lines or ALU input $A$.
    * When the clock transitions low ($\text{CLK} \downarrow$), carry propagation is complete. The Master isolates the verified final sum, and the Slave presents it cleanly to the system.
+  
+
 
 
 
