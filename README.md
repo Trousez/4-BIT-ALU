@@ -10,7 +10,7 @@ Heavily inspired by the detailed schematics and instructional videos of the [Glo
 Building logic gates from raw physical components introduced electrical engineering challenges that do not exist in software simulations:
 *   **The Build:** Constructed using 404 discrete transistors and over 30 meters of wiring on standard breadboards. No ICs were allowed for logic computation
 *   **Power and Breadboard Limitations:** At peak operation, the computer drew immense current. Distributing this load required multiple power connections to prevent the breadboards from melting. The breadboards induced parasitic elements that needed to be overcome.
-*   **Physical Debugging:** Required navigating microscopic faults, loose jumper wires, ground loops, and inductive kickback
+*   **Physical Debugging:** Required navigating microscopic faults, loose jumper wires, ground loops, inductive kickback and more.
 
 ## Architecture & Deep Dives
 
