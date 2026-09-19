@@ -122,11 +122,8 @@ The decision to configure the Accumulator for **Falling-Edge Triggering** direct
    * The Master latch observes the initial ripple glitches, but because the Slave latch remains locked ($E_{\text{Slave}} = 0$), these transient glitches never reach the output lines or ALU input $A$.
    * When the clock transitions low ($\text{CLK} \downarrow$), carry propagation is complete. The Master isolates the verified final sum, and the Slave presents it cleanly to the system.
   
-
-
-
-
-
+Thus this creates a "safety buffer" in time before it "commits" the memory.
+  
   *   ➡️ **[Clock](../docs/Clock.md):**
 ---
 
