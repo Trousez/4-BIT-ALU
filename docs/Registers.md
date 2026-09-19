@@ -104,6 +104,16 @@ Each bit of the Accumulator is constructed by cascading two discrete gated D-lat
   <img src="../images/accumulator.jpeg" alt="Accumulator" width="600">
 </p>
 
+The decision to configure the Accumulator for **Falling-Edge Triggering** directly resolves timing hazards inherent to discrete Ripple-Carry Adders:
+
+1. **The Carry Propagation Hazard:**
+   * During this propagation window, intermediate output lines glitch through invalid arithmetic states.(e.g. In a previous Error Log we observed the brief flicker of lights, which indicate the ALU was still in a state of computation)
+   * If the register sampled on the **Rising Edge ($\text{CLK} \uparrow$)**, it would capture data at the beginning of the clock cycle—latching corrupt, unsettled intermediate logic before carry propagation finishes.
+
+2. **Falling-Edge Settlement ("Wait-and-See"):**
+   * Setting the Master latch to be transparent during $\text{CLK} = 1$ turns the entire high clock half-period into an integrated settlement buffer.
+   * The Master latch observes the initial ripple glitches, but because the Slave latch remains locked ($E_{\text{Slave}} = 0$), these transient glitches never reach the output lines or ALU input $A$.
+   * When the clock transitions low ($\text{CLK} \downarrow$), carry propagation is complete. The Master isolates the verified final sum, and the Slave presents it cleanly to the system.
 
 
 
