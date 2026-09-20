@@ -27,6 +27,11 @@ $$A = A$$
 <p align="center">
   <img src="../images/buffer-2(1).png" alt="Cascaded Inverter Buffer Schematic" width="650">
 </p>
+
+<p align="center">
+  <img src="../images/Output_Buffer.jpg" alt="OUTPUT_BUFFER" width="650">
+</p>
+
 Buffers can also be created by connecting two inverters in series.
 
 | Feature | Design 1 (3 Transistors) | Design 2 (2 Transistors) |
