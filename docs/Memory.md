@@ -23,7 +23,7 @@ To prevent bus contention on the shared 4-bit data bus, memory nibbles interface
 
 ---
 
-## 3. Truth Table & Bus Drive States
+### Truth Table & Bus Drive States
 
 | $\overline{\text{Enable}}$ Line | Stored Bit ($D_{\text{in}}$) | Buffer Output State | Bus Line Voltage ($V_{\text{BUS}}$) | Resulting Bus Logic | Mode |
 | :---: | :---: | :---: | :---: | :---: | :--- |
