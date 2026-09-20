@@ -29,6 +29,13 @@ $$A = A$$
 </p>
 Buffers can also be created by connecting two inverters in series.
 
+| Feature | Design 1 (3 Transistors) | Design 2 (2 Transistors) |
+| :--- | :--- | :--- |
+| **Input Connection** | Connects to the emitter of $Q_7$. | Connects to the base of $Q_1$ via $100\text{ k}\Omega$. |
+| **Switching Action** | **Current-sinking:** Pulled to Ground ($0\text{ V}$) to assert. | **Current-sourcing:** Injects positive voltage/current into the base to assert. |
+| **Floating / Disconnected State** | **Deterministic:** Automatically defaults to High ($5\text{ V}$). | **Undefined / Sensitive:** Base floats without an external pull-down. |
+| **Primary Architectural Role** | **Input Buffer:** Interfacing to active-low or open-collector shared bus lines. | **Output / Display Buffer:** Isolating an internal latch node to drive an indicator LED. |
+
 ---
 
 ### OR GATE
