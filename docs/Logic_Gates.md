@@ -24,9 +24,9 @@ $$A = A$$
 
 ### Buffer from 2 Inverters
    
-<p align="center">
+<!-- <p align="center">
   <img src="../images/buffer-2(1).png" alt="Cascaded Inverter Buffer Schematic" width="650">
-</p>
+</p> -->
 
 <p align="center">
   <img src="../images/Output_Buffer.jpg" alt="OUTPUT_BUFFER" width="650">
