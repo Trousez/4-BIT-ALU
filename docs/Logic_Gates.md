@@ -9,24 +9,28 @@
 
 ### Buffer and Inverter
 
-<p align="center">
-  <img src="../images/buffer-and-inverter-built.jpeg" alt="Breadboard Buffer and Inverter Prototype" width="68%">
-</p>
-<p align="center">
-  <img src="../images/Input_buffer.jpg" alt="Input Buffer Circuit Diagram" width="68%">
-</p>
-
-- Buffer re-outputs a clean, strong signal. This is used when signals start to get weak or is heavily loaded. Wires (especially jumper cables) induce parasitic capacitance that rounds the square wave signals. Buffers restore this since it uses its own $V_{CC}$ and ground rails to source or sink current. This can be mathematically represented as follows:
+Buffer re-outputs a clean, strong signal. This is used when signals start to get weak or is heavily loaded. Wires (especially jumper cables) induce parasitic capacitance that rounds the square wave signals. Buffers restore this since it uses its own $V_{CC}$ and ground rails to source or sink current. This can be mathematically represented as follows:
 
 $$A = A$$
 
-- One also gets Tri-state buffers (which will be looked at in a later section), that is used to prevent circuits from shorting when interconnected i.e. connected on a bus.
+An Inverter simply turns a `ON` (1) to a `OFF` (0) and vice versa.
 
-### Buffer from 2 Inverters
+<p align="center">
+  <img src="../images/buffer-and-inverter-built.jpeg" alt="Breadboard Buffer and Inverter Prototype" width="68%">
+</p>
+
+One also gets Tri-state buffers (which will be looked at in a later section), that is used to prevent circuits from shorting when interconnected i.e. connected on a bus.
+
+
+### Buffers used in the ALU
    
 <!-- <p align="center">
   <img src="../images/buffer-2(1).png" alt="Cascaded Inverter Buffer Schematic" width="650">
 </p> -->
+
+<p align="center">
+  <img src="../images/Input_buffer.jpg" alt="Input Buffer Circuit Diagram" width="68%">
+</p>
 
 <p align="center">
   <img src="../images/Output_Buffer.jpg" alt="OUTPUT_BUFFER" width="650">
