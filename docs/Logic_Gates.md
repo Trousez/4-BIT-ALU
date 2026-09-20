@@ -22,12 +22,12 @@ $$A = A$$
 
 - One also gets Tri-state buffers (which will be looked at in a later section), that is used to prevent circuits from shorting when interconnected i.e. connected on a bus.
 
-### Buffer 2
+### Buffer from 2 Inverters
    
 <p align="center">
   <img src="../images/buffer-2(1).png" alt="Cascaded Inverter Buffer Schematic" width="650">
 </p>
-Buffers can be created by connecting two inverters in series.
+Buffers can also be created by connecting two inverters in series.
 
 ---
 
