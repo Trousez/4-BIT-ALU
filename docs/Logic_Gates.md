@@ -29,11 +29,11 @@ One also gets Tri-state buffers (which will be looked at in a later section), th
 </p> -->
 
 <p align="center">
-  <img src="../images/Input_buffer.jpg" alt="Input Buffer Circuit Diagram" width="68%">
+  <img src="../images/Input_buffer.jpg" alt="Input Buffer Circuit Diagram" width="58%">
 </p>
 
 <p align="center">
-  <img src="../images/Output_Buffer.jpg" alt="OUTPUT_BUFFER" width="68%">
+  <img src="../images/Output_Buffer.jpg" alt="OUTPUT_BUFFER" width="58%">
 </p>
 
 Buffers can also be created by connecting two inverters in series.
