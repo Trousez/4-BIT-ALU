@@ -13,7 +13,7 @@ Buffer re-outputs a clean, strong signal. This is used when signals start to get
 
 $$A = A$$
 
-An Inverter simply turns a `ON` (1) to a `OFF` (0) and vice versa.
+An Inverter simply turns a `ON` (1) to a `OFF` (0) and vice versa (equivalent to the NOT operation)
 
 <p align="center">
   <img src="../images/buffer-and-inverter-built.jpeg" alt="Breadboard Buffer and Inverter Prototype" width="68%">
