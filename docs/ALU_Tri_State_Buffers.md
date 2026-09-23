@@ -1,6 +1,6 @@
 ## ALU Tri-State Buffers & Bus Architecture
 
-The Arithmetic Logic Unit (ALU) interfaces with the shared system bus using active-low, open-collector buffers. This architecture provides high-impedance isolation when disabled, preventing catastrophic bus contention and ensuring deterministic logic levels across all connected modules.
+The Arithmetic Logic Unit (ALU) interfaces with the shared system bus using active-low, open-collector buffers. This architecture provides high-impedance isolation when disabled, preventing "catastrophic" bus contention and ensuring deterministic logic levels across all connected modules.
 
 ---
 ### Bus Contention & Open-collector Architecture
