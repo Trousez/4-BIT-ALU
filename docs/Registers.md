@@ -4,7 +4,7 @@ Each register bit consists of four discrete NAND gates configured as a level-tri
 
 This component is known as a Gated D-Latch. Here is breakdown of the component:
 - **Enable/Clock (The middle input):** When this signal is `ON` (1), the latch is "transparent" and accepts new data. When it is `OFF` (0), the latch ignores new data and holds its current state
-- **Data(Top Input):** The signal we want to store.
+- **Data (Top Input):** The signal we want to store.
 - **Left side NANDs:** The two NAND gates on the left control the inputs to the memory element. Notice how the top-left NAND output feeds directly into the input of the bottom-left NAND: this is a cost effective way to get an inverted output, instead of traditionally building it with an inverter (If you search on Google "D-latch", you will see it traditionally build with a inverter), this is because if clock is High, the output of NAND gate is just the inversion of our `DATA` input The inverted input ensures the memory element never receive the invalid command "SET = `0` & RESET = `0`" which causes a race condition.
 -**The Memory Element (Right Side):** The two cross coupled NAND gates form a SR-Latch. This is the part that actually remembers the stored bit.
 
