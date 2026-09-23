@@ -24,7 +24,7 @@
 - With the Bus and Tri state buffer it is 130 mA.
 ---
 
->### Error Log: Subtract Signal Weakened (9 Dec)
+>### Error Log: Subtract Signal Weakened 
 >
 > **Issue:** When enabling the XOR subtract signal the signal seems to get weakend. The output is wrong, unless I add more wires to connect the ground on the Subtract module.
 >
@@ -33,7 +33,7 @@
 >**Solution:** - Avoid Daisy chaining breadboards, do Star Grounding rather. I also added Bypass capacitors (100nF + 10µF) across the power rails. This acts as a local energy reservoir during current spikes. The 100nF (ceramic capacitors were used as ceramic capacitor are good with high frequencies) capacitors filter out the high frequency noise, while the 10 µF capacitors provide the bulk energy needed to stabilize longer voltage drops.
 
 
->### Error Log: Lights flicker on startup (9 Dec)
+>### Error Log: Lights flicker on startup 
 >
 > **Issue:** When enabling power it seems all the light flicker for a split second.
 >
