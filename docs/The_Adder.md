@@ -42,8 +42,7 @@ Verification of the logic were done using LOGISM.
 ![Half_adder](../images/Full_Adders_1.png)
 
 - The first circuit is a Full Adder made of 2 Half-Adders and an OR-gate
-	- The second circuit is a Full-Adder made only from Nand gates. This one is more compact to build on a breadboard (As each Nand gate is just 2 transistors next to each other.)
-- *0.6-0.7V* was send if inputs was 1 for the second half-adders And gate.
+	- The second circuit is a Full-Adder made only from NAND gates. This one is more compact to build on a breadboard (As each NAND gate is just 2 transistors next to each other.)
 
 ![full_adder](../images/full-adder-built.jpeg)
 
