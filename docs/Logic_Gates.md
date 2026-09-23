@@ -72,7 +72,7 @@ $$\text{Output} = A+B$$
 </p>
 
 - Notice that there are two OR gates shown. Number 1 looks simpler (uses less transistors) but OR gate number 2 is much more useful when using it in tangent with other logic gates (when other logic gates are connected to it)
-- Notice in OR 2 the LED's cathode is directly connected in ground, while in OR 1 the cathode is connected to the collector of the transistor, this characteristic is show with all the other gates since with OR gate 2, one can easiliy connect it to the input of another logic gate.
+- Notice in OR 2 the LED's cathode is directly connected in ground, while in OR 1 the cathode is connected to the collector of the transistor, this characteristic is shown with all the other gates since with OR gate 2, one can easiliy connect it to the input of another logic gate.
 ---
 ### AND GATE 
 
