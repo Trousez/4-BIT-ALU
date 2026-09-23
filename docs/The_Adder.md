@@ -54,7 +54,7 @@ Verification of the logic were done using LOGISM.
  - **Green:** Connects each logic gate to each other
 
 
-> ### Error Log: 2nd Adder Crisis (3 Dec)
+> ### Error Log: 2nd Adder Crisis 
 > 
 > Issue: Carry-out LED only sometimes lit up
 > 
@@ -62,7 +62,7 @@ Verification of the logic were done using LOGISM.
 
 
 
-> ### Error Log: Transistors turned upside down (7 Dec)
+> ### Error Log: Transistors turned upside down 
 > 
 >  Issue: Transistors were turned upside down for the NAND implemented full adder
 > 
