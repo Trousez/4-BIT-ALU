@@ -4,7 +4,7 @@
 ![CPU Hero Shot](images/Computer_running_closeup.jpg)
 
 This logbook documents my journey building a functional 4-bit ALU entirely from scratch using 404 discrete NPN transistors (completely free of integrated circuits for logic computation).
-Heavily inspired by the detailed schematics and instructional videos of the [Global Science Network](https://www.youtube.com/@GlobalScienceNetwork), this document serves as a raw, ground-up record of my notes, design decisions, and debugging logs. It is a working reference of practical engineering challenges, kept intentionally unpolished to capture the authentic, iterative process of bringing complex hardware to life.
+Heavily inspired by the detailed schematics and instructional videos of the [Global Science Network](https://www.youtube.com/@GlobalScienceNetwork), this document serves as a raw, ground-up record of my notes, design decisions, and debugging logs. It is a working reference of practical engineering challenges, kept intentionally unpolished to capture the iterative process of bringing complex hardware to life.
 
 ## The Hardware Reality
 Building logic gates from raw physical components introduced numerous electrical engineering challenges:
