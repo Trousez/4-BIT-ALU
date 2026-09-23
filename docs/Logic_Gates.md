@@ -108,7 +108,7 @@ $$\text{Output} = A \cdot B$$
 
 $$(A \cdot B)'$$
 
-- A NAND gate can be used to create any other type of logic gate, combined with the fact that it only takes 2 transistors to built, most of the computer ( and most modern computer) consists entirely of NAND gate.
+- A NAND gate can be used to create any other type of logic gate, combined with the fact that it only takes 2 transistors to built, most of the computer (and most modern computer) consists entirely of NAND gate.
 
 
 <p align="center">
