@@ -38,7 +38,7 @@ One also gets Tri-state buffers (which will be looked at in a later section), th
 
 Buffers can also be created by connecting two inverters in series.
 
-| Feature | Design 1 (3 Transistors) | Design 2 (2 Transistors) |
+| Feature | Input Buffer (3 Transistors) | Output Buffer (2 Transistors) |
 | :--- | :--- | :--- |
 | **Input Connection** | Connects to the emitter of $Q_7$. | Connects to the base of $Q_1$ via $100\text{ k}\Omega$. |
 | **Switching Action** | **Current-sinking:** Pulled to Ground ($0\text{ V}$) to assert. | **Current-sourcing:** Injects positive voltage/current into the base to assert. |
