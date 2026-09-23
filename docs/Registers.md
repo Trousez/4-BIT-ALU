@@ -55,7 +55,7 @@ This video [Latches and Flip-flops](https://www.youtube.com/watch?v=y7Zf7Bv_J74)
 You do not connect the Clock directly to the Latch. You use a "Gatekeeper" circuit to ensure the register only updates when you want it to.
 
 - **The Circuit:** A single **2-Input AND Gate**.
-- **Input A:** `System Clock` (The heartbeat).
+- **Input A:** `System Clock` 
 - **Input B:** `Load Enable` (The specific command wire, e.g., "Load Reg B").
 - **Output:** Goes to the **Enable/G** pins of all 4 bits in the register.
 
