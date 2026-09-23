@@ -43,7 +43,7 @@ Buffers can also be created by connecting two inverters in series.
 | **Input Connection** | Connects to the emitter of $Q_7$. | Connects to the base of $Q_9$. |
 | **Output State When Input is Actively Driven** | **Low ($0\text{ V}$):** When input is actively pulled to Ground ($0\text{ V}$). | **High ($5\text{ V}$):** When input is actively driven with $+5\text{ V}$. |
 | **Output State When Input is Disconnected / Not Grounded** | **Deterministic High ($5\text{ V}$):** When left floating or pulled high, output defaults cleanly to $5\text{ V}$. | **Undefined / Low ($0\text{ V}$):** With no input drive, base floats; output remains low (fluctuates if noise couples to the base). |
-| **Primary Architectural Role** | **Input Buffer:** Interfacing to open-collector shared bus lines. | **Output / Display Buffer:** Isolating an internal latch node to drive an indicator LED. |
+| **Primary Architectural Role** | **Input Buffer:** Interfacing to open-collector shared bus lines. | **Output / Display Buffer:** Isolating an internal latch node to drive an indicator LED or send signal to subsequent modules. |
 
 ---
 
