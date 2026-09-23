@@ -10,7 +10,7 @@
   <img src="../images/Final_Topdown.jpg" alt="topdown" width="700">
 </p>
 
-### Reflection
+### Reflection & Takeaways
 This project taught we a lot about the engineering challenges when building a physical implementation. When I initially started this project, my goal was to make a Turing complete 4-Bit computer, but I quickly released the physical limitations of the cheap breadboards I used for this project. It seemed impractical to continue the build. Luckily the ALU part of the build is complete and works as intended.
 
 
