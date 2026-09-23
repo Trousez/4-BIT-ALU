@@ -19,7 +19,7 @@ An Inverter simply turns a `ON` (1) to a `OFF` (0) and vice versa (equivalent to
   <img src="../images/buffer-and-inverter-built.jpeg" alt="Breadboard Buffer and Inverter Prototype" width="68%">
 </p>
 
-One also gets Tri-state buffers (which will be looked at in a later section), that is used to prevent circuits from shorting when interconnected i.e. connected on a bus.
+One also gets Tri-state buffers (which will be looked at in a later section), that is used to prevent circuits from shorting when interconnected i.e. connected on a bus. Buffers can also be created by connecting two inverters in series.
 
 
 ### Buffers used in the ALU
@@ -36,7 +36,7 @@ One also gets Tri-state buffers (which will be looked at in a later section), th
   <img src="../images/Output_Buffer.jpg" alt="OUTPUT_BUFFER" width="58%">
 </p>
 
-Buffers can also be created by connecting two inverters in series.
+The above schematics show the buffers (specifically the Input and Output buffers) that are used in building the ALU. The following table shows the difference between the Input and Output buffer.
 
 | Feature | Input Buffer (3 Transistors) | Output Buffer (2 Transistors) |
 | :--- | :--- | :--- |
@@ -44,6 +44,8 @@ Buffers can also be created by connecting two inverters in series.
 | **Output State When Input is Actively Driven** | **Low ($0\text{ V}$):** When input is actively pulled to Ground ($0\text{ V}$). | **High ($5\text{ V}$):** When input is actively driven with $+5\text{ V}$. |
 | **Output State When Input is Disconnected / Not Grounded** | **Deterministic High ($5\text{ V}$):** When left floating or pulled high, output defaults cleanly to $5\text{ V}$. | **Undefined / Low ($0\text{ V}$):** With no input drive, base floats; output remains low (fluctuates if noise couples to the base). |
 | **Primary Architectural Role** | **Input Buffer:** Interfacing to open-collector shared bus lines. | **Output / Display Buffer:** Isolating an internal latch node to drive an indicator LED or send signal to subsequent modules. |
+
+Because the ALU uses an active-low, open-collector shared bus with passive pull-up resistors holding the lines at $+5\text{ V}$ when idle (This Bus architecture will be discussed in a later section), the 3-transistor input buffer interfaces seamlessly by presenting zero electrical load during quiescent high states and switching reliably only when an open-collector driver sinks current by pulling the line to Ground ($0\text{ V}$).Regarding the input node itself, it connects directly to the emitter of an NPN transistor rather than a base, meaning external drivers do not need to supply positive voltage or driving current—they simply provide a path to Ground to pull down the emitter and assert the stage.
 
 ---
 
