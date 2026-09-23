@@ -115,7 +115,7 @@ The decision to configure the Accumulator for **Falling-Edge Triggering** direct
 
 1. **The Carry Propagation Hazard:**
    * During this propagation window, intermediate output lines glitch through invalid arithmetic states.(e.g. In a previous Error Log we observed the brief flicker of lights, which indicate the ALU was still in a state of computation)
-   * If the register sampled on the **Rising Edge ($\text{CLK} \uparrow$)**, it would capture data at the beginning of the clock cycle—latching corrupt, unsettled intermediate logic before carry propagation finishes.
+   * If the register sampled on the **Rising Edge ($\text{CLK} \uparrow$)**, it would capture data at the beginning of the clock cycle, latching corrupt, unsettled intermediate logic before carry propagation finishes.
 
 2. **Falling-Edge Settlement ("Wait-and-See"):**
    * Setting the Master latch to be transparent during $\text{CLK} = 1$ turns the entire high clock half-period into an integrated settlement buffer.
