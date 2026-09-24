@@ -12,7 +12,7 @@ Building logic gates from raw physical components introduced numerous electrical
 *   **Power and Breadboard Limitations:** At peak operation, the computer drew immense current. Distributing this load required multiple power connections to prevent the breadboards from melting. The breadboards also introduced parasitic elements and high-resistance mechanical terminations that needed to be overcome.
 *   **Physical Debugging:** Required navigating microscopic faults, loose jumper wires, ground loops, inductive kickback and more.
 
-## Architecture & Deep Dives
+## Architecture & Logs
 
 Click the links below to explore some of the documentation, schematics, and debugging/Error logs for each specific module of the ALU. Note that debugging "Error" logs are indicated in gray as shown below (as an example):
 >### Error Log (Example for a debugging log)
